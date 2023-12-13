@@ -1,0 +1,6 @@
+rise
+pandas
+matplotlib
+ipyvizzu
+ipyvizzu-story
+streamlit
