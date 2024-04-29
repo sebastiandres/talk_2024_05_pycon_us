@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+$main-color: #a9bcd2;
+
+$theme-blue: #209cee;
+
+$body-bg: $main-color;
+$body-color: white;    
+
+
+/*-- scss:rules --*/
+.blue {
+  color: $theme-blue;
+}
+
+.title-background {
+  .slide-background-content {
+      background-color: black !important;
+      color: white !important;   
+      background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg") !important;
+      background-position: left !important;
+      background-size: contain !important;
+    }
+}
+
+.section-background {
+  .slide-background-content {
+    background-color: $main-color !important;
+    color: white !important;   
+  }
+}
