@@ -2,29 +2,42 @@
 
 $main-color: #a9bcd2;
 
-$theme-blue: #209cee;
-
-$body-bg: $main-color;
-$body-color: white;    
+//$theme-blue: #209cee;
+//$body-bg: $main-color;
+//$body-color: white;    
 
 
 /*-- scss:rules --*/
-.blue {
-  color: $theme-blue;
-}
+//.blue {
+//  color: $theme-blue;
+//}
 
-.title-background {
+.custom-title {
   .slide-background-content {
-      background-color: black !important;
-      color: white !important;   
-      background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg") !important;
+      background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/title-background.png?raw=true") !important;
       background-position: left !important;
       background-size: contain !important;
-    }
+      background-color: $main-color !important;
+      color: white !important;   
+      }
 }
 
-.section-background {
+.custom-section {
   .slide-background-content {
+    background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/section-background.png?raw=true") !important;
+    background-position: left !important;
+    background-size: contain !important;
+    opacity: 0.50 !important;
+    background-color: $main-color !important;
+    color: white !important;   
+  }
+}
+
+.custom-slide {
+  .slide-background-content {
+    background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/slide-background.png?raw=true") !important;
+    background-position: left !important;
+    background-size: contain !important;
     background-color: $main-color !important;
     color: white !important;   
   }
