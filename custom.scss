@@ -1,5 +1,13 @@
 /*-- scss:defaults --*/
 
+$font-family-sans-serif: cabrito_sans_norm_regular;
+$presentation-heading-font: cabrito_sans_norm_regular;
+$presentation-heading-color:  #00263A;
+$presentation-heading-text-transform: uppercase;
+$presentation-heading-font-weight: 500;
+$link-color: #98579B;
+
+// custom variables
 $main-color: #a9bcd2;
 
 //$theme-blue: #209cee;
@@ -27,7 +35,7 @@ $main-color: #a9bcd2;
     background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/section-background.png?raw=true") !important;
     background-position: left !important;
     background-size: contain !important;
-    opacity: 0.50 !important;
+    opacity: 0.25 !important;
     background-color: $main-color !important;
     color: white !important;   
   }
@@ -38,6 +46,7 @@ $main-color: #a9bcd2;
     background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/slide-background.png?raw=true") !important;
     background-position: left !important;
     background-size: contain !important;
+    opacity: 0.20 !important;
     background-color: $main-color !important;
     color: white !important;   
   }

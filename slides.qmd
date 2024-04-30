@@ -2,8 +2,8 @@
 execute:
   echo: true
   html:
-    fig-width: 8
-    fig-height: 6
+    fig-width: 1050
+    fig-height: 700
   pdf:
     fig-width: 7
     fig-height: 5
@@ -45,7 +45,15 @@ Default “normal” size is 1050 x 700
 
 ---
 
-## Who 
+## Section { .custom-section }
+
+---
+
+## Slide { .custom-slide }
+
+---
+
+## Who { .custom-slide }
 ::: columns
 ::: {.column width="70%"}
 * Sebastián Flores aka sebastiandres
@@ -68,7 +76,7 @@ Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites -
 
 ---
 
-## Agenda
+## Agenda { .custom-slide }
 ::: {.incremental}
 * Never
 * kill 
