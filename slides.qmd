@@ -1,6 +1,9 @@
 ---
 execute:
   echo: true
+  revealjs:
+    fig-width: 1050
+    fig-height: 700
   html:
     fig-width: 1050
     fig-height: 700
