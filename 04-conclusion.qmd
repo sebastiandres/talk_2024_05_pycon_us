@@ -1,0 +1,97 @@
+---
+execute:
+  echo: true
+  html:
+    fig-width: 1050
+    fig-height: 700
+  pdf:
+    fig-width: 7
+    fig-height: 5
+format:
+  revealjs:
+    width: 1050
+    height: 700
+    menu: false
+    transition: slide
+    auto-stretch: false
+    embed-resources: true
+    toc: false
+    center: true
+    slide-number: false
+    preview-links: false
+    footer: sebastiandres | https://sebastiandes.xyz
+    output-file: "eng-slides"
+---
+
+## { .custom-section }
+[Wrap up]{style="font-size: 2em"}
+
+---
+
+## Conclusions and Learnings [3 mins]
+::: {.fragment}
+* Storytelling helps convincing and remembering
+* Data Storytelling will become a top skill
+* Skills and tools to learn!
+:::
+
+:::{.notes}
+I hope to have convinced you of three things:
+You can become a better presenter. It’s a very learnable and practicable skill.
+Learn a new skill: Storytelling or Data Storytelling
+Learn a new tool: quarto, jupyter notebook + RISE, or Vizzu. 
+:::
+
+---
+
+## To keep learning
+Storytelling
+* Storyworthy, Matthew Dicks
+* Made to Stick, Chip Heath and Dan Heath
+
+Data Storytelling
+* Storytelling with Data, Cole Nussbaumer Knaflic
+* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
+
+:::{.notes}
+Hopefully I have convinced you to keep learning. As usual, the magic combination is reading+practicing. Here are some resources you might want to check out. 
+This presentation and related resources will be on my page+channels.
+:::
+
+---
+
+##  
+::: columns
+::: {.column width="30%"}
+![](images/ph.png){fig-align="center"}
+:::
+::: {.column width="70%"}
+Feedback
+:::
+:::
+
+:::{.notes}
+I would love to improve my skills as presenter. Help me with some feedback. 
+You can select (optionally) to receive a link to the presentation and my contact information!
+:::
+
+---
+
+::: columns
+::: {.column width="40%"}
+&#32;<br><br><br>
+Questions?
+:::
+::: {.column width="60%"}
+![](images/iceberg.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
+:::
+
+---
+
+
+## Slide 3 {visibility="uncounted"}

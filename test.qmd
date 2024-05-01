@@ -10,7 +10,6 @@ execute:
 format:
   revealjs: 
     transition: slide
-    theme: custom.scss
     auto-stretch: false
     embed-resources: true
     toc: false
@@ -18,10 +17,15 @@ format:
     slide-number: true
     preview-links: auto
     footer: <https://sebastiandes.xyz>
-    output-file: "eng-slides"
+    output-file: "test"
 resources:
   - demo.pdf
 ---
+
+
+## Vizzu {.center="false"}
+A Data Storytelling library for visualization
+
 
 ## { .custom-title }
 ::: {style="position: absolute; left: 300px; top: 500px; height: 300px; width: 750px; background-color: #69b1e9; padding: 20px; border-radius: 5px;"}

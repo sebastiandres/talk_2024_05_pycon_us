@@ -1,9 +1,6 @@
 ---
 execute:
   echo: true
-  revealjs:
-    fig-width: 1050
-    fig-height: 700
   html:
     fig-width: 1050
     fig-height: 700
@@ -11,10 +8,11 @@ execute:
     fig-width: 7
     fig-height: 5
 format:
-  revealjs: 
+  revealjs:
+    width: 1050
+    height: 700
     menu: false
     transition: slide
-    theme: custom.scss
     auto-stretch: false
     embed-resources: true
     toc: false
@@ -23,8 +21,6 @@ format:
     preview-links: false
     footer: sebastiandres | https://sebastiandes.xyz
     output-file: "eng-slides"
-resources:
-  - demo.pdf
 ---
 
 ## { visibility="hidden" }
@@ -32,7 +28,7 @@ Default “normal” size is 1050 x 700
 
 ---
 
-## { .custom-title }
+## { .custom-title visibility="hidden"}
 
 ---
 
@@ -48,11 +44,11 @@ Default “normal” size is 1050 x 700
 
 ---
 
-## Section { .custom-section }
+## Section { .custom-section visibility="hidden" }
 
 ---
 
-## Slide { .custom-slide }
+## Slide { .custom-slide visibility="hidden" }
 
 ---
 
@@ -238,196 +234,3 @@ Lorem Ipsum
 You as presenter should be like a magician. You have to firmly grip the attention and redirect it where you want them to look, without them feel manipulated. It’s quite hard. But that’s why good visualizations are the most powerful tool.
 There is a good amount of visualization libraries. 
 :::
-
----
-
-## { .custom-section }
-[Visualization tools for Data Storytelling]{style="font-size: 2em"}
-
-:::{.notes}
-Visualization is at the heart of Data Storytelling. Let's review some of the most important ones.
-:::
-
----
-
-## Data Exploratory tools
-* Tableau
-* Microsoft's PowerBI
-* Google's Looker/Data Studio
-Too many options! User is responsible for finding the insight.
-
-:::{.notes}
-Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to let people find the precise combination of filter that reveal some insight. But that’s not what you need on your presentation. You need to have crafted what you WANT your audience to see. You need…
-:::
-
----
-
-## Data Explanatory Tools
-So many options!
-* Oldies: Matplotlib
-* Mainstream: Plotly, Altair
-* Others: 
-You are in charge of telling the story. Simple is better.
-
-:::{.notes}
-I usually work with matplotlib, altair, plotly and vizzu. Give them some love. It all depends on the type of graph and time I have. You can do great things to each one of them. If you have some time, play around with Vizzu. You can do some awesome graphs, as in….
-But always remember: the tools is at the service of the story you’re telling. 
-:::
-
----
-
-## Simple is memorable
-Lorem Ipsum
-
-:::{.notes}
-The next advice is to keep things simple and precisely control where you want people to look at. Do not let people search for answers. Feed the answers. Tell a story.
-Vizzu’s Nolan’s example.
-:::
-
----
-
-## Vizzu
-A short vizzu example
-
-:::{.notes}
-Getting the wow effect
-:::
-
----
-
-## { .custom-section }
-[Presentation tools <br> for Data Storytelling]{style="font-size: 2em"}
-
-:::{.notes}
-Presentation.
-:::
-
----
-
-## Presentation tools
-* Oldies: PowerPoint
-* Interactive: quarto, JupyterNotebook+RISE
-* Other: revealjs, ...
-
-:::{.notes}
-Well, first of all, let’s review some different software tools we can use to create a presentation: Power Point, Quarto and JupyterNotebook+RISE. I know there are other alternatives, but these are the ones that I use and recommend. 
-Death by PowerPoint: it’s not about the software per-se, but rather about the skills of the presenter.
-:::
-
----
-
-## Decision flow for the tools
-Lorem Ipsum
-
-:::{.notes}
-PowerPoint: Use this if you have little time and need to create a presentation that’s disposable (one time effort). Might be the most configurable (design). Also, consider that you might need to share the file. Code is not executable nor properly formatted.
-Quarto: Use this if you have enough time and you have a central subject with different “output sources” a book, a presentation, some lab reports, etc. You will be able to to easily copy-paste code, text and images, keeping things up to date easily. You can execute code and integrate the results on the presentation, but code is not executable on the presentation.
-JupyterLab+RISE: Use this if you need to execute code live on the presentation and do not need much personalization.
-Streamlit: You want to code something very interactive, closer to a webpage than to a presentation. You can spend a good amount of time tinkering and trying a half-crazy programmer (me).
-:::
-
----
-
-## Slide XX: Quarto + altair/vizzu: real time visualizations [5 mins]
-Lorem Ipsum
-
-:::{.notes}
-Quarto is a well established project from . It allows to create an equivalent to jupyter notebook, but only with markdown, so the files and repos are clean and easy to maintain. The files have extension qmd, and you can create pretty much anything. Books, websites, etc. It’s quite incredible. This presentation has been made in quarto, BTW. For presentations, the configuration file takes care of converting the plain qmd files into a html page with the revealjs library, which as you have seen is highly editable. But, it’s just a website. So you can share it around and people should be able to open it without to much trouble - or convert it to pdf.
-:::
-
----
-
-## XX +1 
-Lorem Ipsum
-
-:::{.notes}
-TBD
-:::
-
----
-
-## Jupyter Notebook + RISE + Python: real time code evaluation [5 mins]
-Lorem Ipsum
-
-:::{.notes}
-I’m guessing we all know jupyter notebooks at this point. RISE is an extension that allows to convert a notebook into a presentation, while retaining the ability to execute the cells. It’s truly an amazing thing. 
-:::
-
----
-
-## XX +1 
-Lorem Ipsum
-
-:::{.notes}
-TBD
-:::
-
----
-
-## { .custom-section }
-[Wrap up]{style="font-size: 2em"}
-
----
-
-## Conclusions and Learnings [3 mins]
-::: {.fragment}
-* Storytelling helps convincing and remembering
-* Data Storytelling will become a top skill
-* Skills and tools to learn!
-:::
-
-:::{.notes}
-I hope to have convinced you of three things:
-You can become a better presenter. It’s a very learnable and practicable skill.
-Learn a new skill: Storytelling or Data Storytelling
-Learn a new tool: quarto, jupyter notebook + RISE, or Vizzu. 
-:::
-
----
-
-## To keep learning
-* Books
-* "Storytelling with data" world: book, (free/paid) webinars, podcasts, etc.  
-
-:::{.notes}
-Hopefully I have convinced you to keep learning. As usual, the magic combination is reading+practicing. Here are some resources you might want to check out. 
-This presentation and related resources will be on my page+channels.
-:::
-
----
-
-##  
-::: columns
-::: {.column width="30%"}
-![](images/ph.png){fig-align="center"}
-:::
-::: {.column width="70%"}
-Feedback
-:::
-:::
-
-:::{.notes}
-I would love to improve my skills as presenter. Help me with some feedback. 
-You can select (optionally) to receive a link to the presentation and my contact information!
-:::
-
----
-
-::: columns
-::: {.column width="40%"}
-&#32;<br><br><br>
-Questions?
-:::
-::: {.column width="60%"}
-![](images/iceberg.jpeg){fig-align="center"}
-:::
-:::
-
-:::{.notes}
-We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
-:::
-
----
-
-
-## Slide 3 {visibility="uncounted"}

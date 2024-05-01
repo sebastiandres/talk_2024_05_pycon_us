@@ -1,0 +1,557 @@
+---
+execute:
+  echo: true
+  html:
+    fig-width: 1050
+    fig-height: 700
+  pdf:
+    fig-width: 7
+    fig-height: 5
+format:
+  revealjs:
+    width: 1050
+    height: 700
+    menu: false
+    transition: slide
+    theme: custom.scss
+    auto-stretch: false
+    embed-resources: true
+    toc: false
+    center: true
+    slide-number: false
+    preview-links: false
+    footer: sebastiandres | https://sebastiandes.xyz
+    output-file: "eng-slides"
+resources:
+  - demo.pdf
+---
+
+## { visibility="hidden" }
+Default “normal” size is 1050 x 700
+
+---
+
+## { .custom-title }
+
+---
+
+## { .custom-title }
+::: {style="position: absolute; left: 300px; top: 500px; height: 300px; width: 750px; background-color: #69b1e9; padding: 20px; border-radius: 5px;"}
+[Avoiding deaths by PowerPoint]{style="font-size: 30px; line-height: 1em; margin: 0px"} <br>
+[Data Storytelling and Python to the rescue]{style="font-size: 40px; font-weight: bold; line-height: 1em; margin: 0px"} <br>
+[Sebastián Flores, PyCon US 2024, May 20th]{style="font-size: 30px;"}
+:::
+
+::: footer
+:::
+
+---
+
+## Section { .custom-section }
+
+---
+
+## Slide { .custom-slide }
+
+---
+
+## Who { .custom-slide }
+::: columns
+::: {.column width="70%"}
+* Sebastián Flores aka sebastiandres
+* Chief Data Officer at uPlanner
+* Member of Python Chile
+* Collaborator to Streamlit and Vizzu
+* <http://sebastiandres.xyz>
+:::
+::: {.column width="30%"}
+![](images/seba_avatar_gmail.png){fig-align="center"}
+:::
+:::
+
+::: footer
+:::
+
+:::{.notes}
+Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites - wink wink you can follow me on github, twitter and linkedin. I work as Chief Data Officer at uPlanner, and I’m part of Python Chile team. If you want to visit Chile and give a talk at our next PyCon (October), please talk to me after the talk.
+:::
+
+---
+
+## Agenda { .custom-slide }
+::: {.incremental}
+* Never
+* kill 
+* the
+* suspense
+:::
+:::{.notes}
+Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise the stakes. Don't give up the reveal. Don't kill the joke.
+:::
+
+---
+
+## {.custom-section}
+[Storytelling?]{style="font-size: 3em"}
+
+
+---
+
+## Storytelling?
+::: columns
+::: {.column width="50%" .fragment}
+![](images/fire.jpeg){fig-align="center"}
+:::
+::: {.column width="50%" .fragment .center}
+&#32;<br><br><br><br>
+It just works
+:::
+:::
+
+:::{.notes}
+Storytelling is older than movies and books. People has been telling stories since the begining, because it's just the way our brains work. Just as biology can explain why triple chocolate cakes are imposible to resist to our bellies, our brains crave stories. Stories have a structure that makes easy for the brain to remember. Good stories are easy to remember. Every one of you could probably tell the main structure of at least 10 stories: little red riding houd, cindirella, dune, star wars, harry potter, etc. 
+You didn't have to study the structure. It's just natural to remember it.
+:::
+
+---
+
+## 
+::: columns
+::: {.column width="50%" .fragment}
+&#32;<br><br><br>
+Data Storytelling:  
+using Storytelling to create presentations that will be **remembered** and that **create impact**
+:::
+::: {.column width="50%" .fragment}
+![](images/sherlock.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+We are only as good as our communication skills. If you’re really really good, the god of anything, but cannot articulate your ideas and communicate effectively, you’ll only be as good as some bad with great communication skills. Don’t make the mistake. Learn to communicate effectively. [Visual of a lake? A multiplication? A lever!] Public speaking is a lever.
+Think of Sherlock Holmes. We can admire his prodigious mind and memory only because of the work of Doctor John Watson. It’s not enough to crack the case and solve the mystery. We need to be able to collect the important facts and to tell an engaging story. Same goes for data science. It’s not enough to know the latest library or model the problem properly, it’s all about distilling the important fact that your boss needs to know to make the important decisions.
+:::
+
+
+---
+
+##  
+::: columns
+::: {.column width="50%" .fragment}
+![](images/data_science.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+![](images/data_storytelling.png){fig-align="center"}
+:::
+:::
+::: {.fragment .center}
+DS is the new DS
+:::
+
+:::{.notes}
+I think Data Storytelling will be huge in the next years.
+We are on the begining of a new type of professionals, just as Data Scientists were 8 years ago.
+:::
+
+
+---
+
+##  
+Skills vs  Tools
+
+:::{.notes}
+Let's review some skills and tools we can use for Data Storytelling.
+:::
+
+---
+
+## { .custom-section }
+[Skills for Data Storytelling]{style="font-size: 3em"}
+
+---
+
+## Data Storytelling?
+::: columns
+::: {.column width="50%" .fragment}
+&#32;<br><br><br>
+It’s easy to consume but hard to prepare
+:::
+::: {.column width="50%" .fragment}
+![](images/cake.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+Finally, the hardest part of Storytelling. Stories are like puzzles. A solved puzzle is easy to check for correctness, but it takes a long time to be solved.  We intuitively recognize when we hear a good story. But crafting a story is really really hard. The good part: there are some structures to be used and usually your intuition is good enough. It’s a skill that can be learned. So let’s try to learn a thing or two on Data Storytelling. Or maybe a better analogy is that Storytelling is like cooking. Eating is easy. Preparing an outstanding meal is hard.
+:::
+
+
+## What is Data Storytelling
+Lorem Ipsum
+
+:::{.notes}
+For me, Data Storytelling sits at the intersection of Public Speaking, Visualization and Storytelling. It’s learning a bit of these 3 fields, to make your presentations and talks more interesting, more meaningful and more memorable.  Data Storytelling is creating presentations that present data insights in a way that’s easier to understand, digest and actionable.
+:::
+
+---
+
+## What The hero’s journey
+Lorem Ipsum
+
+:::{.notes}
+One of the secrets of Storytelling is that all stories have “The hero´s journey” - something studied by Joseph? Campbel on the ??, which sort of says that there is a common structure: normal world - conflict and call to adventure - … - resolution - return the normal world. Why should you care about this?
+This structure, this pattern, works. It’s engaging and the brain cannot avoid caring about the end. It creates an open loop, and people want to closure. It’s a pattern that works. If you have to remember only 1 thing from this talk, remember this: The audience for your presentation, treat each one of them as a hero on their own. They have their own inner world, and your presentation disrupts that world. You share with them a knowledge, something that SHOULD change how they see the world, the tools they have, anything. At least one phrase to be remembered. If nothing changes for the audience, they wont remember anything a couple of days or even hours after your talk. Memory is very selective. That’s why brains evolved to like stories.
+Now, how to connect this to python and tools?
+:::
+
+---
+
+## Crash course on Data Storytelling
+Lorem Ipsum
+
+:::{.notes}
+There is a known psycology effect. You remember something:
+How it ended
+What was the most intense emotion
+This is key. Always build your presentation around the big ending you want. Work backwards. Create the five ending slides. If anything goes bad, you could still present only those 5 slides. Make sure that’s the ending you want and your audience deserves. Only then work backwards to the rest of the presentation.
+:::
+
+---
+
+## Example - Spotify
+Lorem Ipsum
+
+:::{.notes}
+You probably remember Spotify wrapped. 
+Would you have agreed to spend 15 minutes and share on social media about some data statistics I created you? Well, I’m pretty sure you did.
+How do you feel after seen the data statistics? 
+You LEARNED SOMETHING about yourself. Reflect on that. 
+:::
+
+---
+
+## The first secret of Data Storytelling
+Lorem Ipsum
+
+:::{.notes}
+You as presenter should be like a magician. You have to firmly grip the attention and redirect it where you want them to look, without them feel manipulated. It’s quite hard. But that’s why good visualizations are the most powerful tool.
+There is a good amount of visualization libraries. 
+:::
+
+---
+
+## { .custom-section }
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Tools for Visualization]{style="font-size: 2em"}
+
+:::{.notes}
+Visualization is at the heart of Data Storytelling. Let's review some of the most important ones.
+:::
+
+---
+
+## Data Exploratory tools
+
+![](images/tableau.png){.absolute top=50 left=50}
+
+. . .
+
+![](images/pbi.png){.absolute top=150 right=100}
+
+. . .
+
+![](images/looker.png){.absolute bottom=150 right=150}
+
+. . .
+
+Too many options! User is responsible for finding the insight.
+
+:::{.notes}
+Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to explore. This is a previous step to telling a story.
+This would be the equivalent to do the footwork of hearing people stories.
+You let people find the precise combination of filter that reveal some insight. But that’s not what you need on your presentation. You need to have crafted what you WANT your audience to see.
+You need...
+:::
+
+---
+
+## Data Explanatory Tools
+So many options!
+
+* Good old trustful: Matplotlib
+* Mainstream: Seaborn, Plotly, Altair
+* Others: plotnine, pygal, bokeh
+
+You are in charge of telling the story. Simple is better.
+
+:::{.notes}
+I usually work with matplotlib, altair, plotly and vizzu. Give them some love. It all depends on the type of graph and time I have. You can do great things to each one of them. If you have some time, play around with Vizzu. You can do some awesome graphs, as in….
+But always remember: the tools is at the service of the story you’re telling. 
+:::
+
+---
+
+## Focus on the story
+::: columns
+::: {.column width="50%" .fragment}
+![](images/dst_before.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+![](images/dst_after.png){fig-align="center"}
+:::
+:::
+
+::: {.fragment}
+Example provided on Storytelling with Data, by Cole Nussbaumer Knaflic.
+:::
+
+:::{.notes}
+The next advice is to keep things simple and precisely control where you want people to look at. Do not let people search for answers. Feed the answers. Tell a story.
+Vizzu’s Nolan’s example.
+:::
+
+---
+
+## Vizzu {center="false"}
+A Data Storytelling library for visualization
+
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+import pandas as pd
+ 
+from ipyvizzu import Data, Config, Style
+from ipyvizzustory import Story, Slide, Step
+ 
+ 
+# Create data object, read csv to data frame and add data frame to data object
+data = Data()
+df = pd.read_csv(
+    "https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv",
+    dtype={"Year": str},
+)
+data.add_df(df)
+ 
+ 
+# Create story object, add data to it
+story = Story(data=data)
+ 
+# Set the size of the HTML element
+# that appears within the notebook
+story.set_size("100%", "400px")
+ 
+# Switch on the tooltip that appears
+# when the user hovers the mouse over a chart element
+story.set_feature("tooltip", True)
+ 
+ 
+# Each slide here is a page in the final interactive story
+# Add the first slide
+slide1 = Slide(
+    Step(
+        Data.filter("record.Continent == 'Africa'"),
+        Config.stackedArea(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+                "title": "Population of Africa 1953-2098",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+# Add the slide to the story
+story.add_slide(slide1)
+ 
+slide2 = Slide(
+    Step(
+        Config.percentageArea(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide2)
+ 
+slide3 = Slide(
+    Step(
+        Config.stream(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide3)
+ 
+slide4 = Slide(
+    Step(
+        Config.violin(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "splittedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide4)
+ 
+ 
+# Play the created story!
+story.play()
+```
+
+---
+
+## { .custom-section }
+[Presentation tools <br> for Data Storytelling]{style="font-size: 2em"}
+
+:::{.notes}
+Presentation.
+:::
+
+---
+
+## Presentation tools
+* Oldies: PowerPoint
+* Interactive: quarto, JupyterNotebook+RISE
+* Other: revealjs, ...
+
+:::{.notes}
+Well, first of all, let’s review some different software tools we can use to create a presentation: Power Point, Quarto and JupyterNotebook+RISE. I know there are other alternatives, but these are the ones that I use and recommend. 
+Death by PowerPoint: it’s not about the software per-se, but rather about the skills of the presenter.
+:::
+
+---
+
+## Decision flow for the tools
+Lorem Ipsum
+
+:::{.notes}
+PowerPoint: Use this if you have little time and need to create a presentation that’s disposable (one time effort). Might be the most configurable (design). Also, consider that you might need to share the file. Code is not executable nor properly formatted.
+Quarto: Use this if you have enough time and you have a central subject with different “output sources” a book, a presentation, some lab reports, etc. You will be able to to easily copy-paste code, text and images, keeping things up to date easily. You can execute code and integrate the results on the presentation, but code is not executable on the presentation.
+JupyterLab+RISE: Use this if you need to execute code live on the presentation and do not need much personalization.
+Streamlit: You want to code something very interactive, closer to a webpage than to a presentation. You can spend a good amount of time tinkering and trying a half-crazy programmer (me).
+:::
+
+---
+
+## Slide XX: Quarto + altair/vizzu: real time visualizations [5 mins]
+Lorem Ipsum
+
+:::{.notes}
+Quarto is a well established project from . It allows to create an equivalent to jupyter notebook, but only with markdown, so the files and repos are clean and easy to maintain. The files have extension qmd, and you can create pretty much anything. Books, websites, etc. It’s quite incredible. This presentation has been made in quarto, BTW. For presentations, the configuration file takes care of converting the plain qmd files into a html page with the revealjs library, which as you have seen is highly editable. But, it’s just a website. So you can share it around and people should be able to open it without to much trouble - or convert it to pdf.
+:::
+
+---
+
+## XX +1 
+Lorem Ipsum
+
+:::{.notes}
+TBD
+:::
+
+---
+
+## Jupyter Notebook + RISE + Python: real time code evaluation [5 mins]
+Lorem Ipsum
+
+:::{.notes}
+I’m guessing we all know jupyter notebooks at this point. RISE is an extension that allows to convert a notebook into a presentation, while retaining the ability to execute the cells. It’s truly an amazing thing. 
+:::
+
+---
+
+## XX +1 
+Lorem Ipsum
+
+:::{.notes}
+TBD
+:::
+
+---
+
+## { .custom-section }
+[Wrap up]{style="font-size: 2em"}
+
+---
+
+## Conclusions and Learnings [3 mins]
+::: {.fragment}
+* Storytelling helps convincing and remembering
+* Data Storytelling will become a top skill
+* Skills and tools to learn!
+:::
+
+:::{.notes}
+I hope to have convinced you of three things:
+You can become a better presenter. It’s a very learnable and practicable skill.
+Learn a new skill: Storytelling or Data Storytelling
+Learn a new tool: quarto, jupyter notebook + RISE, or Vizzu. 
+:::
+
+---
+
+## To keep learning
+Storytelling
+* Storyworthy, Matthew Dicks
+* Made to Stick, Chip Heath and Dan Heath
+
+Data Storytelling
+* Storytelling with Data, Cole Nussbaumer Knaflic
+* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
+
+:::{.notes}
+Hopefully I have convinced you to keep learning. As usual, the magic combination is reading+practicing. Here are some resources you might want to check out. 
+This presentation and related resources will be on my page+channels.
+:::
+
+---
+
+##  
+::: columns
+::: {.column width="30%"}
+![](images/ph.png){fig-align="center"}
+:::
+::: {.column width="70%"}
+Feedback
+:::
+:::
+
+:::{.notes}
+I would love to improve my skills as presenter. Help me with some feedback. 
+You can select (optionally) to receive a link to the presentation and my contact information!
+:::
+
+---
+
+::: columns
+::: {.column width="40%"}
+&#32;<br><br><br>
+Questions?
+:::
+::: {.column width="60%"}
+![](images/iceberg.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
+:::
+
+---
+
+
+## Slide 3 {visibility="uncounted"}
