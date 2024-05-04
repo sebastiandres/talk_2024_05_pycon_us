@@ -28,11 +28,15 @@ format:
 
 ---
 
-## Conclusions and Learnings [3 mins]
-::: {.fragment}
-* Storytelling helps convincing and remembering
+## I think that...
+::: columns
+::: {.column width="10%"}
+:::
+::: {.column width="70%" .incremental}
 * Data Storytelling will become a top skill
-* Skills and tools to learn!
+* Data Storytelling skills and tools are fun to learn!
+* Data Storytelling will help you talk **simpler**, with more **focus** and yet, more **engaging**
+:::
 :::
 
 :::{.notes}
@@ -44,14 +48,40 @@ Learn a new tool: quarto, jupyter notebook + RISE, or Vizzu.
 
 ---
 
-## To keep learning
-Storytelling
+## Stories I want you to remember
+::: {.columns style="text-align: center"}
+::: {.column width="50%" .fragment}
+![](images/wrapup/finding_missing_piece.jpeg){fig-align="center"}
+Myself
+:::
+::: {.column width="50%" .fragment}
+![](images/wrapup/new_tool.jpeg){fig-align="center"}
+You
+:::
+:::
+
+---
+
+## To keep learning: 
+
+. . .
+
+Just search online!
+
+. . .
+
+Recommended books on **Data Storytelling**
+
+* Storytelling with Data, Cole Nussbaumer Knaflic
+* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
+
+. . . 
+
+Recommended books on **Storytelling**
+
 * Storyworthy, Matthew Dicks
 * Made to Stick, Chip Heath and Dan Heath
 
-Data Storytelling
-* Storytelling with Data, Cole Nussbaumer Knaflic
-* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
 
 :::{.notes}
 Hopefully I have convinced you to keep learning. As usual, the magic combination is reading+practicing. Here are some resources you might want to check out. 
@@ -60,32 +90,19 @@ This presentation and related resources will be on my page+channels.
 
 ---
 
-##  
-::: columns
-::: {.column width="30%"}
-![](images/ph.png){fig-align="center"}
-:::
-::: {.column width="70%"}
-Feedback
-:::
-:::
+## Retroalimentación
+```{mermaid}
+%%| echo: false
+flowchart LR
+  A{"¿Té gustó la charla?"} --> |Sí| B{"¿Contestar feedback?"}
+  A --> |No| B
+  B --> |Sí| C{"¿Recibir RRSS + ppt?"}
+  C --> |Sí| D{"¡Mantengámonos en contacto!"}
+  D --> Z["¡Gracias por venir a mi charla!"]
+  B --> |No| Z
+  C --> |No| Z
+```
 
-:::{.notes}
-I would love to improve my skills as presenter. Help me with some feedback. 
-You can select (optionally) to receive a link to the presentation and my contact information!
-:::
-
----
-
-::: columns
-::: {.column width="40%"}
-&#32;<br><br><br>
-Questions?
-:::
-::: {.column width="60%"}
-![](images/iceberg.jpeg){fig-align="center"}
-:::
-:::
 
 :::{.notes}
 We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
@@ -93,5 +110,44 @@ We have barely scraped the surface of Data Storytelling and python tools. Do we 
 
 ---
 
+## 
+::: {.columns style="text-align: center"}
+::: {.column width="50%"}
+![](images/survey/QR_code_spanish.png){fig-align="center"}
+https://bit.ly/4blGQgb
+:::
+::: {.column width="50%"}
+![](images/seba_avatar_gmail.png){fig-align="center"}
+[¡Gracias!]{style="text-align: center;"}
+:::
+:::
 
-## Slide 3 {visibility="uncounted"}
+---
+
+
+## Encuesta en ingles {visibility="hidden"}
+
+::: columns
+::: {.column width="60%"}
+```{mermaid}
+flowchart LR
+    A -->|No| Z[Gracias por venir a la charla]
+
+    B[¿Contestar feedback?] -->|Sí| C[¿Recibir RRSS+ppt?]
+    B -->|No| Z[Gracias por venir a la charla]
+
+    C[¿Recibir RRSS+ppt?] -->|Sí| Z[Gracias por venir a la charla]
+    C -->|No| D[Mantengámonos en contacto!]
+
+    D[Mantengámonos en contacto!] --> Z[Gracias por venir a la charla]
+```
+:::
+::: {.column width="40%"}
+![](images/survey/QR_code_spanish.png){fig-align="center"}
+https://bit.ly/4blGQgb
+:::
+:::
+
+:::{.notes}
+We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
+:::

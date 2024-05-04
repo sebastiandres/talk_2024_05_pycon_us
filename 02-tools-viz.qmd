@@ -13,7 +13,11 @@ format:
     output-file: "eng-slides"
 ---
 
-## .
+## weird issue
+
+---
+
+## 
 
 [Data Storytelling]{style="font-size: 1em"}
 
@@ -38,6 +42,10 @@ Visualization is at the heart of Data Storytelling. Let's review some of the mos
 . . .
 
 ![](images/pbi.png){.absolute top=200 left=100 width=800}
+
+. . .
+
+[Too many options! User is responsible for finding the insight]{ style="background-color: #fff"}
 
 :::{.notes}
 Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to explore. This is a previous step to telling a story.
