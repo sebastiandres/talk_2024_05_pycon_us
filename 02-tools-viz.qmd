@@ -29,7 +29,7 @@ Visualization is at the heart of Data Storytelling. Let's review some of the mos
 
 ---
 
-## Data Exploratory tools
+## Data Exploratory Tools
 
 . . .
 
@@ -45,7 +45,7 @@ Visualization is at the heart of Data Storytelling. Let's review some of the mos
 
 . . .
 
-[Too many options! User is responsible for finding the insight]{ style="background-color: #fff"}
+[Too many options! User cannot be responsible for finding the insight]{ style="background-color: #fff"}
 
 :::{.notes}
 Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to explore. This is a previous step to telling a story.
@@ -57,13 +57,21 @@ You need...
 ---
 
 ## Data Explanatory Tools
-Too many good tools!
+So many good tools!
 
 . . .
 
+::: columns
+::: {.column width="70%" .fragment}
 * Good old trustful: Matplotlib
 * Mainstream: Seaborn, Plotly, Altair
 * Others: plotnine, pygal, bokeh
+:::
+::: {.column width="30%" .fragment}
+![](images/viz/matplotlib.png){fig-align="center"}
+:::
+:::
+
 
 . . . 
 
@@ -89,8 +97,6 @@ But always remember: the tools is at the service of the story you’re telling.
 . . .
 
 Don't focus on the numbers. Focus on the story.
-
-. . .
 
 [Examples provided on Storytelling with Data, by Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
 

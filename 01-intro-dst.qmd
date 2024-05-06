@@ -33,8 +33,8 @@ Default “normal” size is 1050 x 700
 ---
 
 ## { .custom-title }
-::: {style="position: absolute; left: 300px; top: 500px; height: 300px; width: 750px; background-color: #69b1e9; padding: 20px; border-radius: 5px;"}
-[Avoiding deaths by PowerPoint]{style="font-size: 30px; line-height: 1em; margin: 0px"} <br>
+::: {style="position: absolute; left: 300px; top: 10px; height: 300px; width: 750px; background-color: #69b1e9; padding: 20px; border-radius: 5px;"}
+[Avoiding "Deaths by PowerPoint"]{style="font-size: 30px; line-height: 1em; margin: 0px"} <br>
 [Data Storytelling and Python to the rescue]{style="font-size: 40px; font-weight: bold; line-height: 1em; margin: 0px"} <br>
 [Sebastián Flores, PyCon US 2024, May 20th]{style="font-size: 30px;"}
 :::
@@ -82,6 +82,11 @@ Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites -
 * the
 * suspense
 :::
+
+. . .
+
+[Rule #1 of Storytelling: Always raise the stakes]{style="font-size: 0.75em; color: gray"}
+
 :::{.notes}
 Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise the stakes. Don't give up the reveal. Don't kill the joke.
 :::
@@ -90,7 +95,6 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 
 ## {.custom-section}
 [Storytelling?]{style="font-size: 3em"}
-
 
 ---
 
@@ -115,9 +119,15 @@ You didn't have to study the structure. It's just natural to remember it.
 ## 
 ::: columns
 ::: {.column width="50%" .fragment}
-&#32;<br><br><br>
+&#32;<br><br>
 Data Storytelling:  
-using Storytelling to create presentations that will be **remembered** and that **create impact**
+
+Using storytelling **tricks** to create presentations that will be **remembered** and that **create impact**
+
+. . .
+
+Emotions create actions
+
 :::
 ::: {.column width="50%" .fragment}
 ![](images/sherlock.jpeg){fig-align="center"}
@@ -134,22 +144,47 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 
 ##  
 ::: columns
-::: {.column width="50%" .fragment}
-![](images/data_science.png){fig-align="center"}
-:::
-::: {.column width="50%" .fragment}
+::: {.column width="50%" .fragment  fragment-index=2}
 ![](images/data_storytelling.png){fig-align="center"}
 :::
+::: {.column width="50%" .fragment fragment-index=1}
+![](images/data_science.png){fig-align="center"}
 :::
-::: {.fragment .center}
-DS is the new DS
+:::
+::: {.fragment style="text-align: center"}
+DSt is the new DSc
 :::
 
 :::{.notes}
 I think Data Storytelling will be huge in the next years.
 We are on the begining of a new type of professionals, just as Data Scientists were 8 years ago.
+For me, Data Storytelling sits at the intersection of Public Speaking, Visualization and Storytelling. It’s learning a bit of these 3 fields, to make your presentations and talks more interesting, more meaningful and more memorable.  Data Storytelling is creating presentations that present data insights in a way that’s easier to understand, digest and actionable.
 :::
 
+---
+
+## The best example
+
+::: columns
+::: {.column width="35%" .fragment fragment-index=2}
+![](images/storytelling/spotify1.jpeg){fig-align="center"}
+:::
+::: {.column width="30%" .center .fragment fragment-index=1}
+&#32;<br><br><br>
+Can a company convince millions of people to share statistics on social media?
+:::
+::: {.column width="35%" .fragment fragment-index=2}
+![](images/storytelling/spotify2.jpeg){fig-align="center"}
+:::
+:::
+
+
+:::{.notes}
+You probably remember Spotify wrapped. 
+Would you have agreed to spend 15 minutes and share on social media about some data statistics I created you? Well, I’m pretty sure you did.
+How do you feel after seen the data statistics? 
+You LEARNED SOMETHING about yourself. Reflect on that. 
+:::
 
 ---
 
@@ -182,18 +217,18 @@ It’s easy to consume but hard to prepare
 Finally, the hardest part of Storytelling. Stories are like puzzles. A solved puzzle is easy to check for correctness, but it takes a long time to be solved.  We intuitively recognize when we hear a good story. But crafting a story is really really hard. The good part: there are some structures to be used and usually your intuition is good enough. It’s a skill that can be learned. So let’s try to learn a thing or two on Data Storytelling. Or maybe a better analogy is that Storytelling is like cooking. Eating is easy. Preparing an outstanding meal is hard.
 :::
 
-
-## What is Data Storytelling
-Lorem Ipsum
-
-:::{.notes}
-For me, Data Storytelling sits at the intersection of Public Speaking, Visualization and Storytelling. It’s learning a bit of these 3 fields, to make your presentations and talks more interesting, more meaningful and more memorable.  Data Storytelling is creating presentations that present data insights in a way that’s easier to understand, digest and actionable.
-:::
-
 ---
 
-## What The hero’s journey
-Lorem Ipsum
+## About stories
+::: columns
+::: {.column width="50%" .fragment}
+![](images/storytelling/tangled.jpeg){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+&#32;<br><br><br><br>
+Stories have a beginning, a climax and a conlusion.
+:::
+:::
 
 :::{.notes}
 One of the secrets of Storytelling is that all stories have “The hero´s journey” - something studied by Joseph? Campbel on the ??, which sort of says that there is a common structure: normal world - conflict and call to adventure - … - resolution - return the normal world. Why should you care about this?
@@ -203,32 +238,41 @@ Now, how to connect this to python and tools?
 
 ---
 
-## Crash course on Data Storytelling
-Lorem Ipsum
+## Brains are so hackable!
+::: columns
+::: {.column width="60%" .fragment}
+![Figure by sketplanation](images/storytelling/sketplanation.png){fig-align="center"}
+:::
+::: {.column width="40%" .fragment}
+**Peak-end rule**:
+
+We remember the most intense moment and the final emotion.
+:::
+:::
+
 
 :::{.notes}
 There is a known psycology effect. You remember something:
 How it ended
 What was the most intense emotion
 This is key. Always build your presentation around the big ending you want. Work backwards. Create the five ending slides. If anything goes bad, you could still present only those 5 slides. Make sure that’s the ending you want and your audience deserves. Only then work backwards to the rest of the presentation.
+The peak–end rule is a psychological heuristic in which people judge an experience largely based on how they felt at its peak (i.e., its most intense point) and at its end, rather than based on the total sum or average of every moment of the experience.
+This is why we don't remember the queue of the rollercoaster, and do remmeber the thrill!
+https://sketchplanations.com/the-peak-end-rule Image from
 :::
 
 ---
 
-## Example - Spotify
-Lorem Ipsum
-
-:::{.notes}
-You probably remember Spotify wrapped. 
-Would you have agreed to spend 15 minutes and share on social media about some data statistics I created you? Well, I’m pretty sure you did.
-How do you feel after seen the data statistics? 
-You LEARNED SOMETHING about yourself. Reflect on that. 
+## The hard part of Data Storytelling
+::: columns
+::: {.column width="50%" .fragment}
+&#32;<br><br><br><br>
+How to manipulate without being manipulative?
 :::
-
----
-
-## The first secret of Data Storytelling
-Lorem Ipsum
+::: {.column width="50%" .fragment}
+![](images/storytelling/magician.jpeg){fig-align="center"}
+:::
+:::
 
 :::{.notes}
 You as presenter should be like a magician. You have to firmly grip the attention and redirect it where you want them to look, without them feel manipulated. It’s quite hard. But that’s why good visualizations are the most powerful tool.
