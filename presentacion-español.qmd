@@ -1,23 +1,18 @@
 ---
 execute:
   echo: true
-  html:
-    fig-width: 1050
-    fig-height: 700
-  pdf:
-    fig-width: 7
-    fig-height: 5
 format:
   revealjs:
-    width: 1050
+    width: 1245
     height: 700
+    theme: custom.scss
     menu: false
     transition: slide
     auto-stretch: false
-    embed-resources: true
+    embed-resources: false
     toc: false
     center: true
-    slide-number: false
+    slide-number: true
     preview-links: false
     footer: sebastiandres | https://sebastiandes.xyz
     output-file: "esp-slides"
@@ -28,8 +23,8 @@ format:
 ---
 
 ## { .custom-title }
-::: {style="position: absolute; left: 300px; top: 10px; background-color: #69b1e9; padding: 20px; border-radius: 5px;"}
-[Evitemos más "muertes por PowerPoint"]{style="font-size: 30px; line-height: 1em; margin: 0px"} <br>
+::: {style="position: absolute; left: 300px; top: 10px; background-color: #69b1e9; opacity: 50%; padding: 20px; border-radius: 5px;"}
+[Evitemos más "muertes por PowerPoint"]{style="font-size: 30px; line-height: 1em; margin: 0px; opacity: 200% !important;"} <br>
 [Data Storytelling y Python al rescate]{style="font-size: 40px; font-weight: bold; line-height: 1em; margin: 0px"} <br>
 [Sebastián Flores, PyCon US 2024, 20 Mayo]{style="font-size: 30px;"}
 :::
@@ -39,44 +34,43 @@ format:
 
 ---
 
-## Acerca de mí { .custom-slide }
+## Acerca de mí { .custom-slide}
 ::: columns
-::: {.column width="70%"}
+::: {.column width="40%"}
+![](images/seba_avatar_gmail.png){fig-align="center"}
+:::
+::: {.column width="60%" .incremental}
+&#32;<br>
+
 * Sebastián Flores aka sebastiandres
 * Chief Data Officer en uPlanner
 * Miembro de Python Chile
 * Colaborador de Streamlit y Vizzu
 * Presentador compulsivo
-* <http://sebastiandres.xyz>
-:::
-::: {.column width="30%"}
-![](images/seba_avatar_gmail.png){fig-align="center"}
 :::
 :::
 
 ::: footer
 :::
 
-:::{.notes}
-Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites - wink wink you can follow me on github, twitter and linkedin. I work as Chief Data Officer at uPlanner, and I’m part of Python Chile team. If you want to visit Chile and give a talk at our next PyCon (October), please talk to me after the talk.
-:::
-
 ---
 
 ## Agenda { .custom-slide }
-::: {.incremental}
-* Evita
-* revelar
-* el
-* final
-* de
-* tu
-* historia
+::: columns
+::: {.column width="30%" .incremental}
+* &#32;
+* No
+* Nope
+* Cero posibilidad
 :::
+::: {.column width="70%" .fragment}
+**Regla #1 de Storytelling:** 
 
-. . .
+¡Trata de siempre aumentar el suspenso! 
 
-[Regla #1 de Storytelling: ¡Trata de siempre aumentar el suspenso!]{style="font-size: 0.75em; color: gray"}
+¡No reveles el final antes de tiempo!
+:::
+:::
 
 :::{.notes}
 Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise the stakes. Don't give up the reveal. Don't kill the joke.
@@ -87,7 +81,7 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 ## { .custom-section }
 [Data Storytelling]{style="font-size: 1em"}
 
-[¿Storytelling?]{style="font-size: 2em"}
+[¿Porqué necesitamos Data Storytelling?]{style="font-size: 1.5em"}
 
 ---
 
@@ -111,21 +105,22 @@ You didn't have to study the structure. It's just natural to remember it.
 
 ## 
 ::: columns
-::: {.column width="50%" .fragment}
-&#32;<br><br>
+::: {.column width="60%" .fragment}
+&#32;<br><br><br>
 Data Storytelling:  
 
 Usar **trucos** de Storytelling para crear presentaciones que serán **recordadas** y que **crearán impacto**
 :::
-::: {.column width="50%" .fragment}
+::: {.column width="40%" .fragment}
 ![](images/sherlock.jpeg){fig-align="center"}
 :::
 :::
 
 . . .
 
+::: {style="text-align: center;"}
 Emociones crean acciones
-
+:::
 
 :::{.notes}
 We are only as good as our communication skills. If you’re really really good, the god of anything, but cannot articulate your ideas and communicate effectively, you’ll only be as good as some bad with great communication skills. Don’t make the mistake. Learn to communicate effectively. [Visual of a lake? A multiplication? A lever!] Public speaking is a lever.
@@ -137,10 +132,10 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 
 ##  
 ::: columns
-::: {.column width="50%" .fragment  fragment-index=2}
+::: {.column width="65%" .fragment  fragment-index=2}
 ![](images/data_storytelling.png){fig-align="center"}
 :::
-::: {.column width="50%" .fragment fragment-index=1}
+::: {.column width="35%" .fragment fragment-index=1}
 ![](images/data_science.png){fig-align="center"}
 :::
 :::
@@ -163,7 +158,7 @@ For me, Data Storytelling sits at the intersection of Public Speaking, Visualiza
 ![](images/storytelling/spotify1.jpeg){fig-align="center"}
 :::
 ::: {.column width="30%" .center .fragment fragment-index=1}
-&#32;<br><br><br>
+&#32;<br><br>
 ¿Puede una compañía convencer a millones de compartir estadísticas en redes sociales?
 :::
 ::: {.column width="35%" .fragment fragment-index=2}
@@ -182,7 +177,21 @@ You LEARNED SOMETHING about yourself. Reflect on that.
 ---
 
 ##  
-Habilidades versus Herramientas
+::: columns
+::: {.column width="50%"}
+![](images/skills_vs_tools.png){fig-align="center"}
+:::
+::: {.column width="50%"}
+<br>
+**Habilidades**  
+<br>
+<br>
+versus  
+<br>
+<br>
+**Herramientas**
+:::
+:::
 
 :::{.notes}
 Let's review some skills and tools we can use for Data Storytelling.
@@ -193,7 +202,30 @@ Let's review some skills and tools we can use for Data Storytelling.
 ## { .custom-section }
 [Data Storytelling]{style="font-size: 1em"}
 
-[Habilidades]{style="font-size: 2em"}
+[Habilidad: Hablar en público]{style="font-size: 1.5em"}
+
+
+---
+
+## 
+::: columns
+::: {.column width="65%"}
+&#32;<br><br><br><br>Hablar en público es 
+
+[aterrador]{.fragment style="font-size: 3em"}
+:::
+::: {.column width="35%"}
+[![](images/public_speaking/presentations_arent_so_bad_1.jpeg){fig-align="center"}]{.fragment}
+[![](images/public_speaking/presentations_arent_so_bad_2.jpeg){fig-align="center"}]{.fragment}
+:::
+:::
+
+---
+
+## { .custom-section }
+[Data Storytelling]{style="font-size: 1em"}
+
+[Habilidad: Storytelling]{style="font-size: 2em"}
 
 ---
 
@@ -201,7 +233,7 @@ Let's review some skills and tools we can use for Data Storytelling.
 ::: columns
 ::: {.column width="50%" .fragment}
 &#32;<br><br><br>
-Muy fácil de consumir, pero dificil de preparar.
+Muy fácil de consumir, pero difícil de preparar.
 :::
 ::: {.column width="50%" .fragment}
 ![](images/cake.jpeg){fig-align="center"}
@@ -258,7 +290,7 @@ https://sketchplanations.com/the-peak-end-rule Image from
 
 ---
 
-## Lo difícil en Data Storytelling
+## Controlando la atención
 ::: columns
 ::: {.column width="50%" .fragment}
 &#32;<br><br><br><br>
@@ -274,15 +306,13 @@ You as presenter should be like a magician. You have to firmly grip the attentio
 There is a good amount of visualization libraries. 
 :::
 
+---
+
 ## 
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Herramientas para Visualización]{style="font-size: 2em"}
-
-:::{.notes}
-Visualization is at the heart of Data Storytelling. Let's review some of the most important ones.
-:::
+[Herramienta: Visualización]{style="font-size: 2em"}
 
 ---
 
@@ -290,19 +320,19 @@ Visualization is at the heart of Data Storytelling. Let's review some of the mos
 
 . . .
 
-![](images/looker.png){width=400}
+![](images/viz/looker.png){width=400 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}
 
 . . .
 
-![](images/tableau.png){.absolute top=150 left=50 width=800}
+![](images/viz/tableau.png){.absolute top=125 left=25 width=800 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"}
 
 . . .
 
-![](images/pbi.png){.absolute top=200 left=100 width=800}
+![](images/viz/pbi.png){.absolute top=150 left=50 width=800 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"}
 
 . . .
 
-[¡Demasiadas opciones! El usuario no puede ser responsable de encontrar lo valioso.]{ style="background-color: #fff"}
+[¡Demasiadas opciones! <br> El usuario no puede ser responsable de encontrar lo valioso.]{ style="background-color: #fff" }
 
 :::{.notes}
 Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to explore. This is a previous step to telling a story.
@@ -314,12 +344,11 @@ You need...
 ---
 
 ## Viz: Explicación de Datos
-¡Muchas buenas herramientas!
-
-. . .
 
 ::: columns
-::: {.column width="70%" .fragment}
+::: {.column width="70%" .fragment .incremental}
+¡Muchas y muy buenas librerías de Python!
+
 * Vieja confiable: Matplotlib
 * Populares: Seaborn, Plotly, Altair
 * Otras: plotnine, pygal, bokeh
@@ -331,7 +360,9 @@ You need...
 
 . . . 
 
-Elige una y domínala.
+::: {style="text-align:center"}
+Elige una y domínala
+:::
 
 :::{.notes}
 I usually work with matplotlib, altair, plotly and vizzu. Give them some love. It all depends on the type of graph and time I have. You can do great things to each one of them. If you have some time, play around with Vizzu. You can do some awesome graphs, as in….
@@ -468,7 +499,7 @@ story.play()
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Herramientas para Presentar]{style="font-size: 2em"}
+[Herramienta: Presentación]{style="font-size: 2em"}
 
 :::{.notes}
 Presentation.
@@ -478,30 +509,25 @@ Presentation.
 
 ## Presentation tools
 * Antiguas: PowerPoint
-* Interactivas: quarto, jupyter notebook + RISE
+* Interactivas: quarto, jupyter + RISE, streamlit-slides
 * Otras: canvas, revealjs, prezi
 
-:::{.notes}
-Well, first of all, let’s review some different software tools we can use to create a presentation: Power Point, Quarto and JupyterNotebook+RISE. I know there are other alternatives, but these are the ones that I use and recommend. 
-Death by PowerPoint: it’s not about the software per-se, but rather about the skills of the presenter.
-:::
-
 ---
 
-## Decision flow for the tools
-Lorem Ipsum
+## 
 
-:::{.notes}
-PowerPoint: Use this if you have little time and need to create a presentation that’s disposable (one time effort). Might be the most configurable (design). Also, consider that you might need to share the file. Code is not executable nor properly formatted.
-Quarto: Use this if you have enough time and you have a central subject with different “output sources” a book, a presentation, some lab reports, etc. You will be able to to easily copy-paste code, text and images, keeping things up to date easily. You can execute code and integrate the results on the presentation, but code is not executable on the presentation.
-JupyterLab+RISE: Use this if you need to execute code live on the presentation and do not need much personalization.
-Streamlit: You want to code something very interactive, closer to a webpage than to a presentation. You can spend a good amount of time tinkering and trying a half-crazy programmer (me).
+::: columns
+::: {.column width="60%"}
+![](images/quarto/quarto1.png)
+
+Sistema de publicación científica y técnica, construida en Pandoc.
+
+Foco en markdown científico, código, reproducibilidad e interacción. 
 :::
-
----
-
-## Quarto
-Sistema de publicación científica y ténica, construida en Pandoc.  
+::: {.column width="40%"}
+![](images/quarto/quarto2.png)
+:::
+:::
 
 :::{.notes}
 Quarto is a well established project from . It allows to create an equivalent to jupyter notebook, but only with markdown, so the files and repos are clean and easy to maintain. The files have extension qmd, and you can create pretty much anything. Books, websites, etc. It’s quite incredible. This presentation has been made in quarto, BTW. For presentations, the configuration file takes care of converting the plain qmd files into a html page with the revealjs library, which as you have seen is highly editable. But, it’s just a website. So you can share it around and people should be able to open it without to much trouble - or convert it to pdf.
@@ -509,16 +535,43 @@ Quarto is a well established project from . It allows to create an equivalent to
 
 ---
 
-[Quarto]{style="font-size: 0.5em; color: gray"}
-
 ::: columns
 ::: {.column width="50%"}
-``` {.markdown source="quarto-min.html"}
+[Código]{style="font-size: 0.5em; color: gray"}
+
+```
+---
+title: "Habits"
+author: "John Doe"
+format:
+  revealjs:
+    transition: fade
+    theme: black
+    toc: true
+    center: true
+---
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+---
+
+## Going to sleep 
+::: { .incremental }
+
+- Get in bed
+- Count sheep
+
+:::
 ```
 :::
 ::: {.column width="50%"}
+[Presentación]{style="font-size: 0.5em; color: gray"}
+
 ```{=html}
-<iframe width="100%" src="quarto_min.html"></iframe>
+<iframe width=600 height=400 src="./quarto_example_file/quarto_min.html"></iframe>
 ```
 :::
 :::
@@ -531,7 +584,7 @@ TBD
 
 ---
 
-[Quarto]{style="font-size: 0.5em; color: gray"}
+[Quarto]{style="font-size: 0.75em; color: gray"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -545,8 +598,9 @@ Desventajas
 ::: columns
 ::: {.column width="50%" .fragment}
 * Archivos planos markdown
+* Multipropósito (libros, artículos, presentaciones)
 * Muchas opciones y configuraciones por defecto
-* Graficos interactivos
+* Gráficos interactivos
 :::
 ::: {.column width="50%" .fragment}
 * No puedes ejecutar código "en vivo".
@@ -555,32 +609,139 @@ Desventajas
 
 ---
 
-## Jupyter Notebook + RISE 
-Evaluación de código "en vivo".
+## 
 
-:::{.notes}
-I’m guessing we all know jupyter notebooks at this point. RISE is an extension that allows to convert a notebook into a presentation, while retaining the ability to execute the cells. It’s truly an amazing thing. I still don't know how this did not become the standard the last decade - this has been available for 10 years...
+::: columns
+::: {.column width="40%"}
+&#32;<br><br>
+
+[Jupyter + RISE]{style="font-size: 1em; color: gray"}
+
+Evaluación de código "en vivo"
+:::
+::: {.column width="60%"}
+![https://rise.readthedocs.io/](images/rise/rise.png)
+:::
 :::
 
 ---
 
-[Jupyter Notebook + RISE]{style="font-size: 0.5em; color: gray"}
-
-![](images/rise/basic_usage.gif)
+<img style="width:80%;" src="./images/rise/basic_usage.gif">
 
 ---
 
-[Jupyter Notebook + RISE]{style="font-size: 0.5em; color: gray"}
-
-![](images/rise/slides_ipynb.gif)
+<img style="width:80%;" src="./images/rise/slides_ipynb.gif">
 
 ---
 
-Todas las cosas buenas de Jupyter Notebook... 
+[Jupyter + RISE]{style="font-size: 0.5em; color: gray"}
+
+Todas las cosas buenas de Jupyter... 
 
 . . .
 
 y todas las partes malas también...
+
+---
+
+[Jupyter + RISE]{style="font-size: 0.75em; color: gray"}
+
+::: columns
+::: {.column width="50%"}
+Ventajas
+:::
+::: {.column width="50%"}
+Desventajas
+:::
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+* Puedes ejecutar código "en vivo"
+* Compatible con todo el ecosistema de python
+:::
+::: {.column width="50%" .fragment}
+* Muy difícil de personalizar
+* Versionamiento de notebooks no es "git-friendly"
+:::
+:::
+
+---
+
+## 
+
+::: columns
+::: {.column width="60%"}
+&#32;<br><br>
+
+[Streamlit-Slides]{style="font-size: 1em; color: gray"}
+
+Tu presentación es una página web
+:::
+::: {.column width="40%"}
+![](./images/streamlit/streamlit.png)
+:::
+:::
+
+---
+
+## streamlit-slides
+<img style="width:65%;" src="./images/streamlit/streamlit-slides.gif"><br>
+[https://github.com/sebastiandres/streamlit_slides]{style="font-size: 0.5em; color: gray"}
+
+---
+
+## ¿Cómo decidir?
+::: { .incremental }
+
+* PowerPoint: Presentación sin código, de un único uso.
+* Quarto: Presentación con código, vinculado a otros documentos. Charlas.
+* Jupyter + RISE: Presentación con código interactivo. Talleres y/o clases.
+* Streamlit-Slides: Presentaciones experimentales y/o autocontenidas.
+
+:::
+
+---
+
+## Show don't tell
+
+::: columns
+::: {.column width="50%" .fragment}
+Juan estaba muy feliz porque aprobó el examen.
+:::
+::: {.column width="50%" .fragment}
+Juan saltaba de alegría por toda la sala, con una sonrisa tan amplia que casi tocaba sus orejas. Su mano izquierda sostenía el papel con la nota máxima, mientras que con la derecha se daba palmadas en el pecho en señal de victoria. El brillo de triunfo en sus ojos lo decía todo.
+:::
+:::
+
+---
+
+## 
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Herramienta: IA]{style="font-size: 2em"}
+
+---
+
+## IA para presentaciones
+::: columns
+::: {.column width="50%" .fragment}
+IA Generativa:
+
+* Imágenes para ilustrar conceptos
+:::
+::: {.column width="50%" .fragment}
+Chatbot (LLMs):
+
+* Contenido
+* Analogías y metáforas
+* Prompts para imágenes
+:::
+::: {.fragment}
+La IA es ese amigo que te da consejos buenos y malos. Quédate con las buenas ideas.
+:::
+:::
 
 ---
 
@@ -591,9 +752,9 @@ y todas las partes malas también...
 
 ## Yo creo que...
 ::: columns
-::: {.column width="10%"}
+::: {.column width="5%"}
 :::
-::: {.column width="70%" .incremental}
+::: {.column width="90%" .incremental}
 * Data Storytelling será una habilidad diferenciadora
 * Las habilidades y herramientas de Data Storytelling son entretenidas y valiosas de aprender!
 * Data Storytelling te ayudará a hacer mejores presentaciones.
@@ -604,20 +765,20 @@ y todas las partes malas también...
 I hope to have convinced you of three things:
 You can become a better presenter. It’s a very learnable and practicable skill.
 Learn a new skill: Storytelling or Data Storytelling
-Learn a new tool: quarto, jupyter notebook + RISE, or Vizzu. 
+Learn a new tool: quarto, jupyter + RISE, or Vizzu. 
 :::
 
 ---
 
 ## Historias que crean realidades
 ::: {.columns style="text-align: center"}
-::: {.column width="50%" .fragment}
+::: {.column width="40%" .fragment}
 ![](images/wrapup/finding_missing_piece.jpeg){fig-align="center"}
 Data Storytelling para mí
 :::
-::: {.column width="50%" .fragment}
+::: {.column width="40%" .fragment}
 ![](images/wrapup/new_tool.jpeg){fig-align="center"}
-Data Storytelling para tí
+¿Data Storytelling para tí?
 :::
 :::
 
@@ -629,25 +790,21 @@ Data Storytelling para tí
 
 ¡Buscar en línea!
 
-. . .
+---
 
-Libros recomendados sobre **Data Storytelling**
+## Libros recomendados 
+**Data Storytelling**
 
 * Storytelling with Data, Cole Nussbaumer Knaflic
 * Data Visualization & Storytelling, Jose Berengueres y Marybeth Sandell
 
-. . . 
+---
 
-Libros recomendados sobre **Storytelling**
+## Libros recomendados
+**Storytelling**
 
 * Storyworthy, Matthew Dicks
 * Made to Stick, Chip Heath y Dan Heath
-
-
-:::{.notes}
-Hopefully I have convinced you to keep learning. As usual, the magic combination is reading+practicing. Here are some resources you might want to check out. 
-This presentation and related resources will be on my page+channels.
-:::
 
 ---
 
