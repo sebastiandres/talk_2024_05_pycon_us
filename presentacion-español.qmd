@@ -7,7 +7,7 @@ format:
     height: 700
     theme: custom.scss
     menu: false
-    transition: slide
+    transition: fade
     auto-stretch: false
     embed-resources: false
     toc: false
@@ -23,10 +23,10 @@ format:
 ---
 
 ## { .custom-title }
-::: {style="position: absolute; left: 300px; top: 10px; background-color: #69b1e9; opacity: 50%; padding: 20px; border-radius: 5px;"}
-[Evitemos más "muertes por PowerPoint"]{style="font-size: 30px; line-height: 1em; margin: 0px; opacity: 200% !important;"} <br>
-[Data Storytelling y Python al rescate]{style="font-size: 40px; font-weight: bold; line-height: 1em; margin: 0px"} <br>
-[Sebastián Flores, PyCon US 2024, 20 Mayo]{style="font-size: 30px;"}
+::: {style="position: absolute; left: 750px; top: 550px; background-color: #ffffff; padding: 10px; border-radius: 5px;"}
+[Evitemos más "muertes por PowerPoint"]{style="font-size: 25px; margin: 0px;"} <br>
+[Data Storytelling y Python al rescate]{style="font-size: 30px; font-weight: bold; margin: 0px"} <br>
+[Sebastián Flores, PyCon US 2024, 20 Mayo]{style="font-size: 25px;"}
 :::
 
 ::: footer
@@ -34,7 +34,7 @@ format:
 
 ---
 
-## Acerca de mí { .custom-slide}
+## Acerca de mí
 ::: columns
 ::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
@@ -204,7 +204,6 @@ Let's review some skills and tools we can use for Data Storytelling.
 
 [Habilidad: Hablar en público]{style="font-size: 1.5em"}
 
-
 ---
 
 ## 
@@ -308,7 +307,7 @@ There is a good amount of visualization libraries.
 
 ---
 
-## 
+## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
@@ -343,7 +342,7 @@ You need...
 
 ---
 
-## Viz: Explicación de Datos
+## Viz: Explicación de Datos 
 
 ::: columns
 ::: {.column width="70%" .fragment .incremental}
@@ -495,7 +494,7 @@ story.play()
 ```
 
 
-## 
+## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
@@ -507,7 +506,7 @@ Presentation.
 
 ---
 
-## Presentation tools
+## Presentation tools { .custom-slide }
 * Antiguas: PowerPoint
 * Interactivas: quarto, jupyter + RISE, streamlit-slides
 * Otras: canvas, revealjs, prezi
@@ -691,7 +690,7 @@ Tu presentación es una página web
 
 ---
 
-## ¿Cómo decidir?
+## ¿Cómo decidir? { .custom-slide }
 ::: { .incremental }
 
 * PowerPoint: Presentación sin código, de un único uso.
@@ -703,7 +702,7 @@ Tu presentación es una página web
 
 ---
 
-## Show don't tell
+## Show don't tell { .custom-slide }
 
 ::: columns
 ::: {.column width="50%" .fragment}
@@ -716,7 +715,7 @@ Juan saltaba de alegría por toda la sala, con una sonrisa tan amplia que casi t
 
 ---
 
-## 
+## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
@@ -724,7 +723,7 @@ Juan saltaba de alegría por toda la sala, con una sonrisa tan amplia que casi t
 
 ---
 
-## IA para presentaciones
+## IA para presentaciones { .custom-slide }
 ::: columns
 ::: {.column width="50%" .fragment}
 IA Generativa:
@@ -750,7 +749,7 @@ La IA es ese amigo que te da consejos buenos y malos. Quédate con las buenas id
 
 ---
 
-## Yo creo que...
+## Yo creo que... { .custom-slide }
 ::: columns
 ::: {.column width="5%"}
 :::
@@ -784,7 +783,7 @@ Data Storytelling para mí
 
 ---
 
-## Para seguir aprendiendo
+## Para seguir aprendiendo { .custom-slide }
 
 . . .
 
@@ -792,7 +791,7 @@ Data Storytelling para mí
 
 ---
 
-## Libros recomendados 
+## Libros recomendados { .custom-slide }
 **Data Storytelling**
 
 * Storytelling with Data, Cole Nussbaumer Knaflic
@@ -800,7 +799,7 @@ Data Storytelling para mí
 
 ---
 
-## Libros recomendados
+## Libros recomendados { .custom-slide }
 **Storytelling**
 
 * Storyworthy, Matthew Dicks
@@ -808,7 +807,7 @@ Data Storytelling para mí
 
 ---
 
-## Retroalimentación
+## Retroalimentación { .custom-slide }
 ```{mermaid}
 %%| echo: false
 flowchart LR
