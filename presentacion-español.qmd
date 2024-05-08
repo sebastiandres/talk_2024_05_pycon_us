@@ -132,10 +132,10 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 
 ##  
 ::: columns
-::: {.column width="65%" .fragment  fragment-index=2}
+::: {.column width="50%" .fragment  fragment-index=2}
 ![](images/data_storytelling.png){fig-align="center"}
 :::
-::: {.column width="35%" .fragment fragment-index=1}
+::: {.column width="50%" .fragment fragment-index=1}
 ![](images/data_science.png){fig-align="center"}
 :::
 :::
