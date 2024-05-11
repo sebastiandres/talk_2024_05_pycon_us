@@ -5,16 +5,14 @@ format:
   revealjs:
     width: 1245
     height: 700
-    theme: custom.scss
     menu: false
     transition: fade
     auto-stretch: false
-    embed-resources: false
+    embed-resources: true
     toc: false
     center: true
     slide-number: true
     preview-links: false
-    footer: sebastiandres | https://sebastiandes.xyz
     output-file: "esp-slides"
 ---
 

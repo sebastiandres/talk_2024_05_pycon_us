@@ -3,6 +3,7 @@ title: "Habits"
 author: "John Doe"
 format:
   revealjs:
+    embed-resources: true
     transition: fade
     theme: black
     toc: true

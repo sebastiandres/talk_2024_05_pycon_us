@@ -1,0 +1,53 @@
+/*-- scss:defaults --*/
+/*
+$font-family-sans-serif: cabrito_sans_norm_regular;
+$presentation-heading-font: cabrito_sans_norm_regular;
+$presentation-heading-color:  #00263A;
+$presentation-heading-text-transform: uppercase;
+$presentation-heading-font-weight: 500;
+$link-color: #98579B;
+--*/
+// custom variables
+$main-color: #ffffff;
+
+//$theme-blue: #209cee;
+//$body-bg: $main-color;
+//$body-color: white;    
+
+
+/*-- scss:rules --*/
+//.blue {
+//  color: $theme-blue;
+//}
+
+.custom-title {
+  .slide-background-content {
+      background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/main_image_16x9.png?raw=true") !important;
+      background-position: left !important;
+      background-size: contain !important;
+      background-color: $main-color !important;
+      color: white !important;   
+      }
+}
+
+.custom-section {
+  .slide-background-content {
+    background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/main_image_16x9.png?raw=true") !important;
+    background-position: left !important;
+    background-size: contain !important;
+    opacity: 0.25 !important;
+    background-color: $main-color !important;
+    color: white !important;   
+  }
+}
+
+.custom-slide {
+  .slide-background-content {
+    background-image: url("https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/assets/secondary_image_16x9.png?raw=true") !important;
+    background-position: left !important;
+    background-size: contain !important;
+    opacity: 0.30 !important;
+    background-color: $main-color !important;
+    color: white !important;   
+  }
+}
