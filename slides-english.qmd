@@ -203,7 +203,7 @@ Let's review some skills and tools we can use for Data Storytelling.
 ## { .custom-section }
 [Data Storytelling]{style="font-size: 1em"}
 
-[Skill: Public Speaking]{style="font-size: 1.5em"}
+[Skill #1: Public Speaking]{style="font-size: 1.5em"}
 
 ---
 
@@ -240,61 +240,12 @@ There is a good amount of visualization libraries.
 
 --- 
 
-## { .custom-section }
-[Data Storytelling]{style="font-size: 1em"}
-
-[Skill: Storytelling]{style="font-size: 2em"}
-
----
-
-## ¿Data Storytelling?
-::: columns
-::: {.column width="50%" .fragment}
-&#32;<br><br><br>
-Easy to judge, hard to prepare
-:::
-::: {.column width="50%" .fragment}
-![](images/cake.jpeg){fig-align="center"}
-:::
-:::
-
-:::{.notes}
-Finally, the hardest part of Storytelling. Stories are like puzzles. A solved puzzle is easy to check for correctness, but it takes a long time to be solved.  We intuitively recognize when we hear a good story. But crafting a story is really really hard. The good part: there are some structures to be used and usually your intuition is good enough. It’s a skill that can be learned. So let’s try to learn a thing or two on Data Storytelling. Or maybe a better analogy is that Storytelling is like cooking. Eating is easy. Preparing an outstanding meal is hard.
-:::
-
----
-
-## Acerca de las historias
-::: columns
-::: {.column width="50%" .fragment}
-![](images/storytelling/tangled.jpeg){fig-align="center"}
-:::
-::: {.column width="50%" .fragment}
-&#32;<br><br><br><br>
-Stories are simple
-
-. . .
-
-start, conflict, ending.
-:::
-:::
-
-:::{.notes}
-One of the secrets of Storytelling is that all stories have “The hero´s journey” - something studied by Joseph? Campbel on the ??, which sort of says that there is a common structure: normal world - conflict and call to adventure - … - resolution - return the normal world. Why should you care about this?
-This structure, this pattern, works. It’s engaging and the brain cannot avoid caring about the end. It creates an open loop, and people want to closure. It’s a pattern that works. If you have to remember only 1 thing from this talk, remember this: The audience for your presentation, treat each one of them as a hero on their own. They have their own inner world, and your presentation disrupts that world. You share with them a knowledge, something that SHOULD change how they see the world, the tools they have, anything. At least one phrase to be remembered. If nothing changes for the audience, they wont remember anything a couple of days or even hours after your talk. Memory is very selective. That’s why brains evolved to like stories.
-Now, how to connect this to python and tools?
-:::
-
----
-
-
----
 
 ## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Tool: Visualization]{style="font-size: 2em"}
+[Tool #1: Visualization]{style="font-size: 2em"}
 
 ---
 
@@ -349,30 +300,6 @@ Pick one and master it
 :::{.notes}
 I usually work with matplotlib, altair, plotly and vizzu. Give them some love. It all depends on the type of graph and time I have. You can do great things to each one of them. If you have some time, play around with Vizzu. You can do some awesome graphs, as in….
 But always remember: the tools is at the service of the story you’re telling. 
-:::
-
----
-
-## 
-::: columns
-::: {.column width="50%" .fragment}
-![](images/dst_before.png){fig-align="center"}
-:::
-::: {.column width="50%" .fragment}
-![](images/dst_after.png){fig-align="center"}
-:::
-:::
-
-. . .
-
-Don't focus on the numbers. Focus on the story.
-
-[(C) Storytelling with Data, por Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
-
-
-:::{.notes}
-The next advice is to keep things simple and precisely control where you want people to look at. Do not let people search for answers. Feed the answers. Tell a story.
-Vizzu’s Nolan’s example.
 :::
 
 ---
@@ -476,12 +403,87 @@ story.add_slide(slide4)
 story.play()
 ```
 
+---
+
+## { .custom-section }
+[Data Storytelling]{style="font-size: 1em"}
+
+[Skill #2: Storytelling]{style="font-size: 2em"}
+
+---
+
+## ¿Data Storytelling?
+::: columns
+::: {.column width="50%" .fragment}
+&#32;<br><br><br>
+Easy to judge, hard to prepare
+:::
+::: {.column width="50%" .fragment}
+![](images/cake.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+Finally, the hardest part of Storytelling. Stories are like puzzles. A solved puzzle is easy to check for correctness, but it takes a long time to be solved.  We intuitively recognize when we hear a good story. But crafting a story is really really hard. The good part: there are some structures to be used and usually your intuition is good enough. It’s a skill that can be learned. So let’s try to learn a thing or two on Data Storytelling. Or maybe a better analogy is that Storytelling is like cooking. Eating is easy. Preparing an outstanding meal is hard.
+:::
+
+---
+
+## Acerca de las historias
+::: columns
+::: {.column width="50%" .fragment}
+![](images/storytelling/tangled.jpeg){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+&#32;<br><br><br><br>
+Stories are simple
+
+. . .
+
+start, conflict, ending.
+:::
+:::
+
+:::{.notes}
+One of the secrets of Storytelling is that all stories have “The hero´s journey” - something studied by Joseph? Campbel on the ??, which sort of says that there is a common structure: normal world - conflict and call to adventure - … - resolution - return the normal world. Why should you care about this?
+This structure, this pattern, works. It’s engaging and the brain cannot avoid caring about the end. It creates an open loop, and people want to closure. It’s a pattern that works. If you have to remember only 1 thing from this talk, remember this: The audience for your presentation, treat each one of them as a hero on their own. They have their own inner world, and your presentation disrupts that world. You share with them a knowledge, something that SHOULD change how they see the world, the tools they have, anything. At least one phrase to be remembered. If nothing changes for the audience, they wont remember anything a couple of days or even hours after your talk. Memory is very selective. That’s why brains evolved to like stories.
+Now, how to connect this to python and tools?
+:::
+
+---
+
+
+---
+
+## 
+::: columns
+::: {.column width="50%" .fragment}
+![](images/dst_before.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+![](images/dst_after.png){fig-align="center"}
+:::
+:::
+
+. . .
+
+Don't focus on the numbers. Focus on the story.
+
+[(C) Storytelling with Data, por Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
+
+
+:::{.notes}
+The next advice is to keep things simple and precisely control where you want people to look at. Do not let people search for answers. Feed the answers. Tell a story.
+Vizzu’s Nolan’s example.
+:::
+
+---
 
 ## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Tool: Presentation]{style="font-size: 2em"}
+[Tool #2: Presentation]{style="font-size: 2em"}
 
 :::{.notes}
 Presentation.
@@ -638,6 +640,20 @@ Cons
 :::
 :::
 
+
+---
+
+## Show don't tell { .custom-slide }
+
+::: columns
+::: {.column width="50%" .fragment}
+Guido was very happy
+:::
+::: {.column width="50%" .fragment}
+Guido ...
+:::
+:::
+
 ---
 
 ## 
@@ -669,39 +685,34 @@ As interactive as you can code...
 
 ---
 
-## Show don't tell { .custom-slide }
-
-::: columns
-::: {.column width="50%" .fragment}
-Guido was very happy
-:::
-::: {.column width="50%" .fragment}
-Guido ...
-:::
-:::
-
----
-
 ## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Tool: AI]{style="font-size: 2em"}
+[Tool #3: AI]{style="font-size: 2em"}
 
 ---
 
 ## { .custom-slide }
 ::: columns
 ::: {.column width="50%" .fragment}
+&#32;<br><br>
+
 * Don't search images, create them!
-* LLMs for ideas on content
-* Analogies and text rewriting
-* Prompts to create better images
+* Use AI chatbots for: 
+  * Analogies and examples
+  * Prompts to create better images!
 :::
 ::: {.column width="50%" .fragment}
 ![](images/ai/choice.jpeg){fig-align="center"}
 :::
 :::
+
+:::{.notes}
+AI - Artificial Intelligence - can also be a good source of inspiration and help when making better presentations.
+It's really helpful to create images to complement your talk and illustrate your points. Use it to get ideas, analogies, examples, or event prompts to create better images. Think of AI as the friend that gives you some good and bad ideas. It's your responsability to select the good ones!
+:::
+
 
 ---
 
@@ -710,28 +721,10 @@ Guido ...
 
 ---
 
-## I believe that... { .custom-slide }
-::: columns
-::: {.column width="5%"}
-:::
-::: {.column width="90%" .incremental}
-* Data Storytelling is a crucial skill
-* Data Storytelling skills and tools can be learned
-* Data Storytelling will make you a better speaker
-:::
-:::
-
-:::{.notes}
-I hope to have convinced you of three things:
-You can become a better presenter. It’s a very learnable and practicable skill.
-Learn a new skill: Storytelling or Data Storytelling
-Learn a new tool: quarto, jupyter + RISE, or Vizzu. 
-:::
-
----
-
 ## Two stories
 ::: {.columns style="text-align: center"}
+::: {.column width="10%"}
+:::
 ::: {.column width="40%" .fragment}
 ![](images/wrapup/finding_missing_piece.jpeg){fig-align="center"}
 Data Storytelling for me
@@ -742,29 +735,34 @@ Data Storytelling for you?
 :::
 :::
 
----
-
-## Keep learning { .custom-slide }
-
-. . .
-
-Just search online!
+:::{.notes}
+For me, storytelling has been a sort of revelation. 
+It has been a sort of "unified model" of communication that is common to science, programming, books, movies and pretty much everything.
+I hope I have been able to share the benefits and importance of using Storytelling and Data Storytelling on your presentations, so you begining using it and it becomes one of your set of tools. 
+:::
 
 ---
 
-## Recommended reading { .custom-slide }
-**Data Storytelling**
+## I believe that... { .custom-slide }
+::: columns
+::: {.column width="5%"}
+:::
+::: {.column width="90%" .incremental}
+&#32;<br><br>
 
-* Storytelling with Data, Cole Nussbaumer Knaflic
-* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
+* Data Storytelling is a crucial skill
+* YOU can learn Data Storytelling skills and tools
+:::
+:::
 
----
-
-## Libros recomendados { .custom-slide }
-**Storytelling**
-
-* Storyworthy, Matthew Dicks
-* Made to Stick, Chip Heath and Dan Heath
+:::{.notes}
+I hope to have convinced you of the importance of Data Storytelling. 
+Using some of the tools and skills can help you CRAFT better presentations and 
+make your ideas shine.
+You CAN become a better presenter.
+Learn a new skill: Storytelling or Data Storytelling
+Learn a new tool: quarto, jupyter + RISE, or Vizzu. 
+:::
 
 ---
 
@@ -781,26 +779,86 @@ flowchart LR
 
 
 :::{.notes}
-We have barely scraped the surface of Data Storytelling and python tools. Do we still have some time for questions?
+I love getting feedback from my presentations, because it has helped me improve my skills and get ideas on content and slides.
+If you like the talks - and specially if you disliked the talk - share your thoughts! All this material is on my github, but if you want you can share your email at the end of the survey and I will send you an email from my personal email with links and stuff, and we can keep in touch! If you don't want to answer the survey that's OK too! 
 :::
 
 ---
 
 ## 
 ::: {.columns style="text-align: center"}
-::: {.column width="50%"}
+::: {.column width="10%"}
+:::
+::: {.column width="40%"}
 ![](images/survey/QR_code_english.png){fig-align="center"}
 https://tally.so/r/3NAPeb
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
 [¡Gracias!]{style="text-align: center;"}
 :::
 :::
-::: {style="text-align=center"}
-sebastiandres | https://sebastiandres.xyz
+
+::: {style="text-align: center"}
+[sebastiandres | https://sebastiandres.xyz]{style="font-size: 0.75em; color: gray"}
 :::
 
+---
+
+## Recommended reading { .custom-slide }
+::: columns
+::: {.column width="70%"}
+&#32;<br>
+
+**Storytelling**
+
+* Storyworthy, Matthew Dicks
+* Made to Stick, Chip Heath and Dan Heath
+:::
+::: {.column width="30%"}
+![](images/survey/QR_code_english.png){fig-align="center"}
+[https://tally.so/r/3NAPeb]{style="font-size: 0.75em; text-align: center;"}
+:::
+:::
+
+---
+
+## Recommended reading { .custom-slide }
+::: { .columns }
+::: {.column width="70%"}
+&#32;<br>
+
+**Data Storytelling**
+
+* Storytelling with Data, Cole Nussbaumer Knaflic
+* Data Visualization & Storytelling, Jose Berengueres and Marybeth Sandell
+
+:::
+::: {.column width="30%"}
+![](images/survey/QR_code_english.png){fig-align="center"}
+[https://tally.so/r/3NAPeb]{style="font-size: 0.75em; text-align: center;"}
+:::
+:::
+
+---
+
+## 
+::: {.columns style="text-align: center"}
+::: {.column width="10%"}
+:::
+::: {.column width="40%"}
+![](images/survey/QR_code_english.png){fig-align="center"}
+https://tally.so/r/3NAPeb
+:::
+::: {.column width="40%"}
+![](images/seba_avatar_gmail.png){fig-align="center"}
+[¡Gracias!]{style="text-align: center;"}
+:::
+:::
+
+::: {style="text-align: center"}
+[sebastiandres | https://sebastiandres.xyz]{style="font-size: 0.75em; color: gray"}
+:::
 
 ---
 
