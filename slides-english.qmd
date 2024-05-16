@@ -11,10 +11,13 @@ format:
     embed-resources: true
     toc: false
     center: true
-    slide-number: true
+    slide-number: false
     preview-links: false
     output-file: "eng-slides"
-    footer: "Pycon US 2024, Sebastián Flores"
+    footer: Pycon US 2024, Sebastián Flores
+    theme:
+        - simple
+        - style/style_background.scss
 ---
 
 ## .
@@ -349,7 +352,7 @@ A Data Storytelling library in JS & Python
 
 . . .
 
-```{.python}
+```{python}
 #| code-fold: true
 #| code-summary: "Show the code"
 
@@ -484,7 +487,7 @@ Don't share numbers. Share a story.
 ::: {.column width="60%"}
 &#32;<br><br>
 
-* Don't search images, create them!
+* Don't search for images, create them!
 * Use AI chatbots for: 
   * Analogies and examples
   * Prompts to create better images!
