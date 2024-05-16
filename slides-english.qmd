@@ -14,6 +14,7 @@ format:
     slide-number: true
     preview-links: false
     output-file: "eng-slides"
+    footer: "Pycon US 2024, Sebastián Flores"
 ---
 
 ## .
@@ -24,7 +25,10 @@ format:
 ::: {style="position: absolute; left: 750px; top: 550px; background-color: #ffffff; padding: 10px; border-radius: 5px;"}
 [Avoiding "Deaths by PowerPoint"]{style="font-size: 25px; margin: 0px;"} <br>
 [Data Storytelling and Python to the rescue]{style="font-size: 30px; font-weight: bold; margin: 0px"} <br>
-[Sebastián Flores, PyCon US 2024, May 20th]{style="font-size: 25px;"}
+[Sebastián Flores, PyCon US 2024, May 18th]{style="font-size: 25px;"}
+:::
+
+::: footer
 :::
 
 ---
@@ -48,6 +52,9 @@ format:
 Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites - wink wink you can follow me on github, twitter and linkedin. I work as Chief Data Officer at uPlanner, and I’m part of Python Chile team. If you want to visit Chile and give a talk at our next PyCon (October), please talk to me after the talk.
 :::
 
+::: footer
+:::
+
 ---
 
 ## Agenda { .custom-slide }
@@ -67,6 +74,9 @@ Always raise the stakes!
 :::
 :::
 
+::: footer
+:::
+
 :::{.notes}
 Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise the stakes. Don't give up the reveal. Don't kill the joke.
 :::
@@ -78,6 +88,8 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 
 [Why Data Storytelling?]{style="font-size: 1.5em"}
 
+::: footer
+:::
 ---
 
 ## ¿Storytelling?
@@ -87,7 +99,7 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 :::
 ::: {.column width="50%" .fragment .center}
 &#32;<br><br><br><br>
-Stories are older than all of our technology
+Stories are the first human technology
 :::
 :::
 
@@ -100,7 +112,7 @@ You didn't have to study the structure. It's just natural to remember it.
 
 ## Ohh, those hackable brains
 ::: columns
-::: {.column width="40%" .fragment}
+::: {.column width="40%"}
 Peak-End Rule
 ![](images/storytelling/sketplanation.png){fig-align="center"}
 Image by sketplanation
@@ -126,7 +138,7 @@ https://sketchplanations.com/the-peak-end-rule Image from
 
 ## 
 ::: columns
-::: {.column width="60%" .fragment}
+::: {.column width="60%"}
 &#32;<br><br><br>
 Data Storytelling:  
 
@@ -154,14 +166,14 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 ## The best example
 
 ::: columns
-::: {.column width="30%" .fragment fragment-index=2}
+::: {.column width="30%" .fragment fragment-index=1}
 ![](images/storytelling/spotify1.jpeg){fig-align="center"}
 :::
-::: {.column width="40%" .center .fragment fragment-index=1}
+::: {.column width="40%" .center}
 &#32;<br><br>
 How to make millions of people share statistics on social media?
 :::
-::: {.column width="30%" .fragment fragment-index=2}
+::: {.column width="30%" .fragment fragment-index=1}
 ![](images/storytelling/spotify2.jpeg){fig-align="center"}
 :::
 :::
@@ -217,9 +229,7 @@ Public Speaking is
 :::
 :::
 
-. . .
-
-::: {.columns} 
+::: {.columns .fragment} 
 ::: {.column width="45%"}
 [SCARY]{.fragment style="font-size: 3em"}
 :::
@@ -232,7 +242,7 @@ Public Speaking is
 
 ## 
 ::: columns
-::: {.column width="60%" .fragment}
+::: {.column width="60%"}
 &#32;<br><br><br><br>
 It's hard to be the center of attention.
 
@@ -256,11 +266,12 @@ There is a good amount of visualization libraries.
 
 [Tool #1: Visualization]{style="font-size: 2em"}
 
+::: footer
+:::
+
 ---
 
 ## Data Exploratory Viz
-
-. . .
 
 ![](images/viz/looker.png){width=400 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}
 
@@ -305,13 +316,10 @@ If in the first act you have hung a pistol on the wall, then in the following on
 
 ---
 
-
----
-
 ## Data Explanatory Viz
 
 ::: columns
-::: {.column width="70%" .fragment .incremental}
+::: {.column width="70%" .incremental}
 So many good python libraries!
 
 * Classic: Matplotlib
@@ -439,7 +447,7 @@ story.play()
 
 ## 
 ::: columns
-::: {.column width="50%" .fragment}
+::: {.column width="50%"}
 ![](images/dst_before.png){fig-align="center"}
 :::
 ::: {.column width="50%" .fragment}
@@ -460,19 +468,20 @@ Don't share numbers. Share a story.
 
 ---
 
----
-
 ## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
 [Tool #2: AI]{style="font-size: 2em"}
 
+::: footer
+:::
+
 ---
 
 ## { .custom-slide }
 ::: columns
-::: {.column width="60%" .fragment}
+::: {.column width="60%"}
 &#32;<br><br>
 
 * Don't search images, create them!
@@ -498,6 +507,9 @@ It's really helpful to create images to complement your talk and illustrate your
 
 [Tool #3: Presentation]{style="font-size: 2em"}
 
+::: footer
+:::
+
 ---
 
 ## { .custom-slide }
@@ -517,14 +529,14 @@ It's really helpful to create images to complement your talk and illustrate your
 
 ---
 
-## Show don't tell { .custom-slide }
+## [Show]{style="color: green"}, [don't tell.]{style="color: red"} { .custom-slide }
 
 ::: columns
-::: {.column width="50%" .fragment}
-[Guido was happy because he solved the bug on his code.]{style="color: red"}
-:::
-::: {.column width="50%" .fragment}
+::: {.column width="50%" .fragment fragment-index=2}
 [Guido's eyes lit up as the terminal finally executed without errors. A wide grin spread across his face. He jumped up from his chair, fists raised in triumph. "Yes!" he exclaimed, as he savored the moment of triumph with a deep, contented sigh.]{style="color: green"}
+:::
+::: {.column width="50%" .fragment fragment-index=1}
+[Guido was happy because he solved the bug on his code.]{style="color: red"}
 :::
 :::
 
@@ -542,6 +554,7 @@ It's really helpful to create images to complement your talk and illustrate your
 
 ::: columns
 ::: {.column width="60%"}
+&#32;<br><br>
 [quarto]{style="font-size: 1em; color: gray"}
 
 An open-source scientific and technical publishing system.
