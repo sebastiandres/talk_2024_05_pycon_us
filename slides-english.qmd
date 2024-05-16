@@ -29,7 +29,7 @@ format:
 
 ---
 
-## Acerca de mí
+## About me
 ::: columns
 ::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
@@ -38,9 +38,9 @@ format:
 &#32;<br>
 
 * Sebastián Flores aka sebastiandres
-* Chief Data Officer at uPlanner
 * Member of Python Chile
 * Collaborator to Streamlit and Vizzu
+* Chief Data Officer at uPlanner
 :::
 :::
 
@@ -59,11 +59,11 @@ Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites -
 * No chance
 :::
 ::: {.column width="70%" .fragment}
-**Rule #1 of Storytelling:** 
-
-Always raise the stakes! 
+**Storytelling principle #1:** 
 
 Never give away the ending!
+
+Always raise the stakes! 
 :::
 :::
 
@@ -101,15 +101,14 @@ You didn't have to study the structure. It's just natural to remember it.
 ## Ohh, those hackable brains
 ::: columns
 ::: {.column width="40%" .fragment}
+Peak-End Rule
 ![](images/storytelling/sketplanation.png){fig-align="center"}
-Peak-End Rule by sketplanation
+Image by sketplanation
 :::
 ::: {.column width="60%" .fragment}
 ![](images/storytelling/got.jpg){fig-align="center"}
 
-. . .
-
-Game of Thrones rating by Kelvin Neo
+[Game of Thrones rating, by Kelvin Neo]{.fragment}
 :::
 :::
 
@@ -155,14 +154,14 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 ## The best example
 
 ::: columns
-::: {.column width="35%" .fragment fragment-index=2}
+::: {.column width="30%" .fragment fragment-index=2}
 ![](images/storytelling/spotify1.jpeg){fig-align="center"}
 :::
-::: {.column width="30%" .center .fragment fragment-index=1}
+::: {.column width="40%" .center .fragment fragment-index=1}
 &#32;<br><br>
 How to make millions of people share statistics on social media?
 :::
-::: {.column width="35%" .fragment fragment-index=2}
+::: {.column width="30%" .fragment fragment-index=2}
 ![](images/storytelling/spotify2.jpeg){fig-align="center"}
 :::
 :::
@@ -177,20 +176,20 @@ You LEARNED SOMETHING about yourself. Reflect on that.
 
 ---
 
-##  
+##  { visibility="hidden" }
 ::: columns
 ::: {.column width="50%"}
 ![](images/skills_vs_tools.png){fig-align="center"}
 :::
 ::: {.column width="50%"}
 <br>
-**3 Skills**  
+**2 Skills**  
 <br>
 <br>
 and  
 <br>
 <br>
-**2 Tools**
+**3 Tools**
 :::
 :::
 
@@ -209,26 +208,37 @@ Let's review some skills and tools we can use for Data Storytelling.
 
 ## 
 ::: columns
-::: {.column width="65%"}
-&#32;<br><br><br><br>Public Speaking is
+::: {.column width="45%"}
+&#32;<br><br><br><br><br>
+Public Speaking is
+:::
+::: {.column width="35%"}
+![](images/public_speaking/presentations_arent_so_bad_1.jpeg){fig-align="center"}
+:::
+:::
 
+. . .
+
+::: {.columns} 
+::: {.column width="45%"}
 [SCARY]{.fragment style="font-size: 3em"}
 :::
 ::: {.column width="35%"}
-[![](images/public_speaking/presentations_arent_so_bad_1.jpeg){fig-align="center"}]{.fragment}
-[![](images/public_speaking/presentations_arent_so_bad_2.jpeg){fig-align="center"}]{.fragment}
+![](images/public_speaking/presentations_arent_so_bad_2.jpeg){fig-align="center"}
 :::
 :::
 
 ---
 
-## Attention control
+## 
 ::: columns
-::: {.column width="50%" .fragment}
+::: {.column width="60%" .fragment}
 &#32;<br><br><br><br>
-Control the attention without being manipulative?
+It's hard to be the center of attention.
+
+It's hard to direct the attention of the audience where **YOU** want. 
 :::
-::: {.column width="50%" .fragment}
+::: {.column width="40%" .fragment}
 ![](images/storytelling/magician.jpeg){fig-align="center"}
 :::
 :::
@@ -239,7 +249,6 @@ There is a good amount of visualization libraries.
 :::
 
 --- 
-
 
 ## { .custom-section }
 
@@ -265,7 +274,7 @@ There is a good amount of visualization libraries.
 
 . . .
 
-[Too many options! <br> User cannot be in charge of finding the insights.]{ style="background-color: #fff" }
+[Too many options! <br> User **cannot** be responsible of finding your insights.]{ style="background-color: #fff" }
 
 :::{.notes}
 Tableau, PowerBI, Google’s Data? As the name suggests, they are great tools to explore. This is a previous step to telling a story.
@@ -273,6 +282,29 @@ This would be the equivalent to do the footwork of hearing people stories.
 You let people find the precise combination of filter that reveal some insight. But that’s not what you need on your presentation. You need to have crafted what you WANT your audience to see.
 You need...
 :::
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Storytelling principle #2:** 
+
+Details are important, 
+
+[but not **all** details are important.]{.fragment}
+:::
+:::
+
+:::{.notes}
+If in the first act you have hung a pistol on the wall, then in the following one it should be fired. Otherwise don’t put it there. (Chekhov's Gun)
+:::
+
+---
+
 
 ---
 
@@ -405,56 +437,6 @@ story.play()
 
 ---
 
-## { .custom-section }
-[Data Storytelling]{style="font-size: 1em"}
-
-[Skill #2: Storytelling]{style="font-size: 2em"}
-
----
-
-## ¿Data Storytelling?
-::: columns
-::: {.column width="50%" .fragment}
-&#32;<br><br><br>
-Easy to judge, hard to prepare
-:::
-::: {.column width="50%" .fragment}
-![](images/cake.jpeg){fig-align="center"}
-:::
-:::
-
-:::{.notes}
-Finally, the hardest part of Storytelling. Stories are like puzzles. A solved puzzle is easy to check for correctness, but it takes a long time to be solved.  We intuitively recognize when we hear a good story. But crafting a story is really really hard. The good part: there are some structures to be used and usually your intuition is good enough. It’s a skill that can be learned. So let’s try to learn a thing or two on Data Storytelling. Or maybe a better analogy is that Storytelling is like cooking. Eating is easy. Preparing an outstanding meal is hard.
-:::
-
----
-
-## Acerca de las historias
-::: columns
-::: {.column width="50%" .fragment}
-![](images/storytelling/tangled.jpeg){fig-align="center"}
-:::
-::: {.column width="50%" .fragment}
-&#32;<br><br><br><br>
-Stories are simple
-
-. . .
-
-start, conflict, ending.
-:::
-:::
-
-:::{.notes}
-One of the secrets of Storytelling is that all stories have “The hero´s journey” - something studied by Joseph? Campbel on the ??, which sort of says that there is a common structure: normal world - conflict and call to adventure - … - resolution - return the normal world. Why should you care about this?
-This structure, this pattern, works. It’s engaging and the brain cannot avoid caring about the end. It creates an open loop, and people want to closure. It’s a pattern that works. If you have to remember only 1 thing from this talk, remember this: The audience for your presentation, treat each one of them as a hero on their own. They have their own inner world, and your presentation disrupts that world. You share with them a knowledge, something that SHOULD change how they see the world, the tools they have, anything. At least one phrase to be remembered. If nothing changes for the audience, they wont remember anything a couple of days or even hours after your talk. Memory is very selective. That’s why brains evolved to like stories.
-Now, how to connect this to python and tools?
-:::
-
----
-
-
----
-
 ## 
 ::: columns
 ::: {.column width="50%" .fragment}
@@ -467,14 +449,45 @@ Now, how to connect this to python and tools?
 
 . . .
 
-Don't focus on the numbers. Focus on the story.
+Don't share numbers. Share a story.
 
 [(C) Storytelling with Data, por Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
 
 
 :::{.notes}
-The next advice is to keep things simple and precisely control where you want people to look at. Do not let people search for answers. Feed the answers. Tell a story.
-Vizzu’s Nolan’s example.
+
+:::
+
+---
+
+---
+
+## { .custom-section }
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Tool #2: AI]{style="font-size: 2em"}
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="60%" .fragment}
+&#32;<br><br>
+
+* Don't search images, create them!
+* Use AI chatbots for: 
+  * Analogies and examples
+  * Prompts to create better images!
+:::
+::: {.column width="40%" .fragment}
+![](images/ai/choice.jpeg){fig-align="center"}
+:::
+:::
+
+:::{.notes}
+AI - Artificial Intelligence - can also be a good source of inspiration and help when making better presentations.
+It's really helpful to create images to complement your talk and illustrate your points. Use it to get ideas, analogies, examples, or event prompts to create better images. Think of AI as the friend that gives you some good and bad ideas. It's your responsability to select the good ones!
 :::
 
 ---
@@ -483,17 +496,44 @@ Vizzu’s Nolan’s example.
 
 [Data Storytelling]{style="font-size: 1em"}
 
-[Tool #2: Presentation]{style="font-size: 2em"}
+[Tool #3: Presentation]{style="font-size: 2em"}
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Storytelling principle #3:** 
+
+[Show]{style="color: green"}, [don't tell.]{style="color: red"}
+:::
+:::
 
 :::{.notes}
-Presentation.
+:::
+
+---
+
+## Show don't tell { .custom-slide }
+
+::: columns
+::: {.column width="50%" .fragment}
+[Guido was happy because he solved the bug on his code.]{style="color: red"}
+:::
+::: {.column width="50%" .fragment}
+[Guido's eyes lit up as the terminal finally executed without errors. A wide grin spread across his face. He jumped up from his chair, fists raised in triumph. "Yes!" he exclaimed, as he savored the moment of triumph with a deep, contented sigh.]{style="color: green"}
+:::
 :::
 
 ---
 
 ## Presentation tools { .custom-slide }
+
 * Classic: PowerPoint
-* Interactive: quarto, jupyter + RISE, streamlit
+* **"Show don't tell" tools: quarto, jupyter + RISE, streamlit**
 * Other: canvas, revealjs, prezi
 
 ---
@@ -502,14 +542,14 @@ Presentation.
 
 ::: columns
 ::: {.column width="60%"}
-![](images/quarto/quarto1.png)
+[quarto]{style="font-size: 1em; color: gray"}
 
-Sistema de publicación científica y técnica, construida en Pandoc.
+An open-source scientific and technical publishing system.
 
-Foco en markdown científico, código, reproducibilidad e interacción. 
+Focus on scientific markdown, dynamic & interactive documents based on code (Python/R/Julia).
 :::
 ::: {.column width="40%"}
-![](images/quarto/quarto2.png)
+![https://quarto.org/](images/quarto/quarto2.png)
 :::
 :::
 
@@ -568,6 +608,8 @@ TBD
 
 ---
 
+## { visibility="hidden" }
+
 [Quarto]{style="font-size: 0.75em; color: gray"}
 
 ::: columns
@@ -601,7 +643,7 @@ Cons
 
 [Jupyter + RISE]{style="font-size: 1em; color: gray"}
 
-Evaluación de código "en vivo"
+Jupyter plugin to display notebooks as revealjs slides.
 :::
 ::: {.column width="60%"}
 ![https://rise.readthedocs.io/](images/rise/rise.png)
@@ -610,14 +652,19 @@ Evaluación de código "en vivo"
 
 ---
 
-<img style="width:80%;" src="./images/rise/basic_usage.gif">
+[Jupyter + RISE]{style="font-size: 1em; color: gray"}
+
+<img style="width:100%;" src="./images/rise/basic_usage.gif">
 
 ---
 
-<img style="width:80%;" src="./images/rise/slides_ipynb.gif">
+## { visibility="hidden" }
+
+<img style="width:100%;" src="./images/rise/slides_ipynb.gif">
 
 ---
 
+## { visibility="hidden" }
 [Jupyter + RISE]{style="font-size: 0.75em; color: gray"}
 
 ::: columns
@@ -640,20 +687,6 @@ Cons
 :::
 :::
 
-
----
-
-## Show don't tell { .custom-slide }
-
-::: columns
-::: {.column width="50%" .fragment}
-Guido was very happy
-:::
-::: {.column width="50%" .fragment}
-Guido ...
-:::
-:::
-
 ---
 
 ## 
@@ -664,55 +697,32 @@ Guido ...
 
 [Streamlit]{style="font-size: 1em; color: gray"}
 
-As interactive as you can code...
+All python & as interactive as you can to code it...
 :::
 ::: {.column width="40%"}
-![](./images/streamlit/streamlit.png)
+![https://streamlit.io/](./images/streamlit/streamlit.png)
 :::
 :::
 
 ---
 
-## ¿Cómo decidir? { .custom-slide }
+## 
+
+[Streamlit]{style="font-size: 1em; color: gray"}
+
+<img style="width:100%;" src="./images/streamlit/pyconchile2021.gif">
+
+---
+
+## A decision flow { .custom-slide }
 ::: { .incremental }
 
 * PowerPoint: Single use no-code presentation
 * Quarto: Talks from related documents (books, articles)
-* Jupyter + RISE: Workshops or classes. Executing code is important.
-* Streamlit: Experimental presentations?
+* Jupyter + RISE: Workshops or classes. Executing code is important
+* Streamlit: Customized/experimental presentations
 
 :::
-
----
-
-## { .custom-section }
-
-[Data Storytelling]{style="font-size: 1em"}
-
-[Tool #3: AI]{style="font-size: 2em"}
-
----
-
-## { .custom-slide }
-::: columns
-::: {.column width="50%" .fragment}
-&#32;<br><br>
-
-* Don't search images, create them!
-* Use AI chatbots for: 
-  * Analogies and examples
-  * Prompts to create better images!
-:::
-::: {.column width="50%" .fragment}
-![](images/ai/choice.jpeg){fig-align="center"}
-:::
-:::
-
-:::{.notes}
-AI - Artificial Intelligence - can also be a good source of inspiration and help when making better presentations.
-It's really helpful to create images to complement your talk and illustrate your points. Use it to get ideas, analogies, examples, or event prompts to create better images. Think of AI as the friend that gives you some good and bad ideas. It's your responsability to select the good ones!
-:::
-
 
 ---
 
@@ -795,7 +805,7 @@ https://tally.so/r/3NAPeb
 :::
 ::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
-[¡Gracias!]{style="text-align: center;"}
+[Thank you!]{style="text-align: center;"}
 :::
 :::
 
