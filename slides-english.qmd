@@ -25,14 +25,25 @@ format:
 ---
 
 ## { .custom-title }
-::: {style="position: absolute; left: 750px; top: 550px; background-color: #ffffff; padding: 10px; border-radius: 5px;"}
-[Avoiding "Deaths by PowerPoint"]{style="font-size: 25px; margin: 0px;"} <br>
+::: {style="position: absolute; left: 700px; top: 550px; width:2000px; background-color: #ffffff; padding: 10px; border-radius: 5px;"}
+[Avoiding "Deaths by PowerPoint"]{style="font-size: 20px; margin: 0px;"} <br>
 [Data Storytelling and Python to the rescue]{style="font-size: 30px; font-weight: bold; margin: 0px"} <br>
 [Sebastián Flores, PyCon US 2024, May 18th]{style="font-size: 25px;"}
 :::
 
 ::: footer
 :::
+
+---
+##
+
+**Death by PowerPoint (noun):**
+
+A painful experience caused by a long, boring presentation with too many slides filled with text, small fonts, and endless bullet points. Common symptoms include sleepy eyes, yawning, and a strong desire to escape. 
+
+Example: "After an hour, I felt like I was dying by PowerPoint."
+
+*(See also: meeting purgatory, presentation torture)*
 
 ---
 
@@ -214,14 +225,14 @@ Let's review some skills and tools we can use for Data Storytelling.
 
 ---
 
-## { .custom-section }
+## { visibility="hidden" .custom-section }
 [Data Storytelling]{style="font-size: 1em"}
 
 [Skill #1: Public Speaking]{style="font-size: 1.5em"}
 
 ---
 
-## 
+## { visibility="hidden" }
 ::: columns
 ::: {.column width="45%"}
 &#32;<br><br><br><br><br>
@@ -243,7 +254,7 @@ Public Speaking is
 
 ---
 
-## 
+## { visibility="hidden" }
 ::: columns
 ::: {.column width="60%"}
 &#32;<br><br><br><br>
@@ -484,6 +495,21 @@ Don't share numbers. Share a story.
 
 ## { .custom-slide }
 ::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Storytelling principle #3:** 
+
+Your first draft is always going to be terrible.
+
+:::
+:::
+
+---
+
+##
+::: columns
 ::: {.column width="60%"}
 &#32;<br><br>
 
@@ -521,7 +547,7 @@ It's really helpful to create images to complement your talk and illustrate your
 &#32;
 :::
 ::: {.column width="70%"}
-**Storytelling principle #3:** 
+**Storytelling principle #4:** 
 
 [Show]{style="color: green"}, [don't tell.]{style="color: red"}
 :::
@@ -576,7 +602,7 @@ Quarto is a well established project from . It allows to create an equivalent to
 ---
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="40%"}
 [Code]{style="font-size: 0.5em; color: gray"}
 
 ```
@@ -607,11 +633,11 @@ format:
 :::
 ```
 :::
-::: {.column width="50%"}
+::: {.column width="60%"}
 [Slides]{style="font-size: 0.5em; color: gray"}
 
 ```{=html}
-<iframe width=600 height=400 src="./quarto_example_file/quarto_min.html"></iframe>
+<iframe width=600 height=400 src="quarto_min.html"></iframe>
 ```
 :::
 :::
@@ -713,7 +739,7 @@ Cons
 
 [Streamlit]{style="font-size: 1em; color: gray"}
 
-All python & as interactive as you can to code it...
+All python and as interactive as you can to code it...
 :::
 ::: {.column width="40%"}
 ![https://streamlit.io/](./images/streamlit/streamlit.png)
@@ -730,7 +756,7 @@ All python & as interactive as you can to code it...
 
 ---
 
-## A decision flow { .custom-slide }
+## A decision flow
 ::: { .incremental }
 
 * PowerPoint: Single use no-code presentation
