@@ -14,7 +14,6 @@ format:
     slide-number: false
     preview-links: false
     output-file: "eng-slides"
-    footer: Pycon US 2024, Sebastián Flores
     theme:
         - simple
         - style/style_background.scss
@@ -29,9 +28,6 @@ format:
 [Avoiding "Deaths by PowerPoint"]{style="font-size: 20px; margin: 0px;"} <br>
 [Data Storytelling and Python to the rescue]{style="font-size: 30px; font-weight: bold; margin: 0px"} <br>
 [Sebastián Flores, PyCon US 2024, May 18th]{style="font-size: 25px;"}
-:::
-
-::: footer
 :::
 
 ---
@@ -66,9 +62,6 @@ Example: "After an hour, I felt like I was dying by PowerPoint."
 Hi all. My name is Sebastian Flores, also known as sebastiandres on most sites - wink wink you can follow me on github, twitter and linkedin. I work as Chief Data Officer at uPlanner, and I’m part of Python Chile team. If you want to visit Chile and give a talk at our next PyCon (October), please talk to me after the talk.
 :::
 
-::: footer
-:::
-
 ---
 
 ## Agenda { .custom-slide }
@@ -88,9 +81,6 @@ Always raise the stakes!
 :::
 :::
 
-::: footer
-:::
-
 :::{.notes}
 Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise the stakes. Don't give up the reveal. Don't kill the joke.
 :::
@@ -102,8 +92,6 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 
 [Why Data Storytelling?]{style="font-size: 1.5em"}
 
-::: footer
-:::
 ---
 
 ## ¿Storytelling?
@@ -113,7 +101,9 @@ Lesson #1. It's important to be clear, but NEVER kill the suspense. Always raise
 :::
 ::: {.column width="50%" .fragment .center}
 &#32;<br><br><br><br>
-Stories are the first human technology
+Stories are 
+
+the first human technology
 :::
 :::
 
@@ -126,12 +116,12 @@ You didn't have to study the structure. It's just natural to remember it.
 
 ## Ohh, those hackable brains
 ::: columns
-::: {.column width="40%"}
+::: {.column width="45%"}
 Peak-End Rule
 ![](images/storytelling/sketplanation.png){fig-align="center"}
 Image by sketplanation
 :::
-::: {.column width="60%" .fragment}
+::: {.column width="55%" .fragment}
 ![](images/storytelling/got.jpg){fig-align="center"}
 
 [Game of Thrones rating, by Kelvin Neo]{.fragment}
@@ -280,9 +270,6 @@ There is a good amount of visualization libraries.
 
 [Tool #1: Visualization]{style="font-size: 2em"}
 
-::: footer
-:::
-
 ---
 
 ## Data Exploratory Viz
@@ -356,106 +343,6 @@ I usually work with matplotlib, altair, plotly and vizzu. Give them some love. I
 But always remember: the tools is at the service of the story you’re telling. 
 :::
 
----
-
-## Vizzu
-A Data Storytelling library in JS & Python
-
-. . .
-
-```{python}
-#| code-fold: true
-#| code-summary: "Show the code"
-
-import pandas as pd
- 
-from ipyvizzu import Data, Config, Style
-from ipyvizzustory import Story, Slide, Step
- 
- 
-# Create data object, read csv to data frame and add data frame to data object
-data = Data()
-df = pd.read_csv(
-    "./data/population.csv",
-    dtype={"Year": str},
-)
-data.add_df(df)
- 
- 
-# Create story object, add data to it
-story = Story(data=data)
- 
-# Set the size of the HTML element
-# that appears within the notebook
-story.set_size("100%", "400px")
- 
-# Switch on the tooltip that appears
-# when the user hovers the mouse over a chart element
-story.set_feature("tooltip", True)
- 
- 
-# Each slide here is a page in the final interactive story
-# Add the first slide
-slide1 = Slide(
-    Step(
-        Data.filter("record.Continent == 'Africa'"),
-        Config.stackedArea(
-            {
-                "x": "Year",
-                "y": "Medium",
-                "stackedBy": "Subregion",
-                "title": "Population of Africa 1953-2098",
-            }
-        ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
-    )
-)
-# Add the slide to the story
-story.add_slide(slide1)
- 
-slide2 = Slide(
-    Step(
-        Config.percentageArea(
-            {
-                "x": "Year",
-                "y": "Medium",
-                "stackedBy": "Subregion",
-            }
-        ),
-    )
-)
-story.add_slide(slide2)
- 
-slide3 = Slide(
-    Step(
-        Config.stream(
-            {
-                "x": "Year",
-                "y": "Medium",
-                "stackedBy": "Subregion",
-            }
-        ),
-    )
-)
-story.add_slide(slide3)
- 
-slide4 = Slide(
-    Step(
-        Config.violin(
-            {
-                "x": "Year",
-                "y": "Medium",
-                "splittedBy": "Subregion",
-            }
-        ),
-    )
-)
-story.add_slide(slide4)
- 
- 
-# Play the created story!
-story.play()
-```
 
 ---
 
@@ -482,14 +369,104 @@ Don't share numbers. Share a story.
 
 ---
 
+## Vizzu
+A Data Storytelling library in JS & Python
+
+. . .
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+import pandas as pd
+from ipyvizzu import Data, Config, Style
+from ipyvizzustory import Story, Slide, Step
+
+# Import the date
+df = pd.read_excel("./data/python_conference.xlsx", 
+            dtype={"year": str, "location": str, "attendees": int, "type":str})
+
+# Create story object, add data to it
+data = Data()
+data.add_df(df)
+story = Story(data=data)
+
+# Set the size of the HTML element and activate tooltip
+story.set_size("100%", "400px")
+story.set_feature("tooltip", True)
+
+# Each slide here is a page in the final interactive story
+slide1 = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "year",
+                "y": "attendees",
+                "title": "Pycon Attendees",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide1)
+
+# Each slide here is a page in the final interactive story
+slide2 = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
+                "title": "Pycon Attendees",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide2)
+
+# Each slide here is a page in the final interactive story
+slide3 = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
+                "title": "Pycon Attendees",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide3)
+
+# Percentages
+slide3 = Slide(
+    Step(
+        Config.percentageColumn(
+            {
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
+            }
+        ),
+    )
+)
+story.add_slide(slide3)
+
+# Play the created story!
+story.play()
+```
+
+---
+
 ## { .custom-section }
 
 [Data Storytelling]{style="font-size: 1em"}
 
 [Tool #2: AI]{style="font-size: 2em"}
-
-::: footer
-:::
 
 ---
 
@@ -513,10 +490,10 @@ Your first draft is always going to be terrible.
 ::: {.column width="60%"}
 &#32;<br><br>
 
-* Don't search for images, create them!
 * Use AI chatbots for: 
   * Analogies and examples
   * Prompts to create better images!
+* Don't search for images, create them!
 :::
 ::: {.column width="40%" .fragment}
 ![](images/ai/choice.jpeg){fig-align="center"}
@@ -535,9 +512,6 @@ It's really helpful to create images to complement your talk and illustrate your
 [Data Storytelling]{style="font-size: 1em"}
 
 [Tool #3: Presentation]{style="font-size: 2em"}
-
-::: footer
-:::
 
 ---
 
@@ -558,7 +532,7 @@ It's really helpful to create images to complement your talk and illustrate your
 
 ---
 
-## [Show]{style="color: green"}, [don't tell.]{style="color: red"} { .custom-slide }
+## [Show]{style="color: green"}, [don't tell.]{style="color: red"} 
 
 ::: columns
 ::: {.column width="50%" .fragment fragment-index=2}
@@ -571,7 +545,7 @@ It's really helpful to create images to complement your talk and illustrate your
 
 ---
 
-## Presentation tools { .custom-slide }
+## Presentation tools
 
 * Classic: PowerPoint
 * **"Show don't tell" tools: quarto, jupyter + RISE, streamlit**
@@ -633,6 +607,7 @@ format:
 :::
 ```
 :::
+
 ::: {.column width="60%"}
 [Slides]{style="font-size: 0.5em; color: gray"}
 
@@ -818,7 +793,7 @@ Learn a new tool: quarto, jupyter + RISE, or Vizzu.
 
 ---
 
-## Feedback { .custom-slide }
+## Feedback
 ```{mermaid}
 %%| echo: false
 flowchart LR
@@ -857,7 +832,7 @@ https://tally.so/r/3NAPeb
 
 ---
 
-## Recommended reading { .custom-slide }
+## Recommended reading
 ::: columns
 ::: {.column width="70%"}
 &#32;<br>
@@ -875,7 +850,7 @@ https://tally.so/r/3NAPeb
 
 ---
 
-## Recommended reading { .custom-slide }
+## Recommended reading
 ::: { .columns }
 ::: {.column width="70%"}
 &#32;<br>
