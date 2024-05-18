@@ -810,7 +810,7 @@ All this material is on my github, but if you want you can share your email at t
 :::
 ::: {.column width="40%"}
 ![](images/survey/QR_code_english.png){fig-align="center"}
-https://tally.so/r/3NAPeb
+https://tinyurl.com/ycxj9ep5
 :::
 ::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
@@ -840,7 +840,7 @@ So here's the survey - just scan the qr code or type the link, my nickname and m
 :::
 ::: {.column width="30%"}
 ![](images/survey/QR_code_english.png){fig-align="center"}
-[https://tally.so/r/3NAPeb]{style="font-size: 0.75em; text-align: center;"}
+[https://tinyurl.com/ycxj9ep5]{style="font-size: 0.75em; text-align: center;"}
 :::
 :::
 
@@ -864,7 +864,7 @@ My favorite book on storytelling is Storyworthy, by Matthew Dicks. It's a book p
 :::
 ::: {.column width="30%"}
 ![](images/survey/QR_code_english.png){fig-align="center"}
-[https://tally.so/r/3NAPeb]{style="font-size: 0.75em; text-align: center;"}
+[https://tinyurl.com/ycxj9ep5]{style="font-size: 0.75em; text-align: center;"}
 :::
 :::
 
@@ -880,7 +880,7 @@ My favorite book on data storytelling is Storyworthy, by Storytelling with Data,
 :::
 ::: {.column width="40%"}
 ![](images/survey/QR_code_english.png){fig-align="center"}
-https://tally.so/r/3NAPeb
+https://tinyurl.com/ycxj9ep5
 :::
 ::: {.column width="40%"}
 ![](images/seba_avatar_gmail.png){fig-align="center"}
