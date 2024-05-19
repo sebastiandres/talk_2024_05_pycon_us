@@ -20,7 +20,7 @@ format:
         - style/style_background.scss
 ---
 
-## &#32;
+## Use the arrows to navigate the presentation.
 
 --- 
 

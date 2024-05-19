@@ -6,9 +6,9 @@ Talk I hope to give at PyCon US 2024.
 * **Lugar**: Pittsburgh, PyCon US 2024
 * **Contexto**: My first PyCon US talk!
 * **Visualización**: 
-  * [Slides (html, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.html)
-  * [Slides (pdf, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.pdf)
-  * [Quarto code (qmd)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.qmd)
+  * [Slides (html, 40 Mb, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.html)
+  * [Slides (pdf, 12 Mb, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.pdf)
+  * [Quarto code (qmd, 26 kb)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.qmd)
 
 
 # Español
@@ -20,7 +20,7 @@ Charla que espero sea aceptada en la PyCon US 2024.
 * **Lugar**: Pittsburgh, PyCon US 2024
 * **Contexto**: Mi primera charla en la PyCon US
 * **Visualización**: 
-  * [Slides (html, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.html)
-  * [Slides (pdf, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.pdf)
-  * [Quarto code (qmd)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.qmd)
+  * [Slides (html, 45 Mb, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.html)
+  * [Slides (pdf, 7 Mb, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.pdf)
+  * [Quarto code (qmd, 22 kb)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.qmd)
 

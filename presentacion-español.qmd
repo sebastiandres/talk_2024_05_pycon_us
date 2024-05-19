@@ -15,9 +15,12 @@ format:
     slide-number: true
     preview-links: false
     output-file: "presentacion-español"
+    theme:
+        - simple
+        - style/style_background.scss
 ---
 
-## .
+## Usar las flechas laterales para navegar la presentación.
 
 ---
 
