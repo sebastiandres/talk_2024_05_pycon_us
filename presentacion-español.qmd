@@ -5,7 +5,8 @@ format:
   revealjs:
     width: 1245
     height: 700
-    menu: false
+    menu: true
+    controls: true
     transition: fade
     auto-stretch: false
     embed-resources: true
@@ -131,10 +132,10 @@ Think of Sherlock Holmes. We can admire his prodigious mind and memory only beca
 ##  
 ::: columns
 ::: {.column width="50%" .fragment  fragment-index=2}
-![](images/data_storytelling.png){fig-align="center"}
+![](images/why/DST_esp.png){fig-align="center"}
 :::
 ::: {.column width="50%" .fragment fragment-index=1}
-![](images/data_science.png){fig-align="center"}
+![](images/why/DS_esp.png){fig-align="center"}
 :::
 :::
 ::: {.fragment style="text-align: center"}

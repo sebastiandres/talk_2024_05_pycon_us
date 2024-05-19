@@ -6,6 +6,7 @@ format:
     width: 1245
     height: 700
     menu: false
+    controls: true
     transition: fade
     auto-stretch: false
     embed-resources: true
