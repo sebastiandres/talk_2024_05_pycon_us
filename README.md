@@ -2,12 +2,13 @@
 Talk I hope to give at PyCon US 2024.
 * **Título**: Python and Data Storytelling to the Rescue: Let's Avoid More Death by PowerPoint - PyCon US 2024 (2024/05/17)
 * **Resumen**: Over the past few years, I have experimented with various presentation formats (jupyter notebook + RISE, streamlit, and quarto) and graphic libraries (matplotlib, altair, powerbi/tableau, vizzu) in search of greater interactivity when presenting and teaching. At the same time, I became very interested in the related topic of data storytelling, which focuses on the skills and hacks to make a presentation memorable and impactful. I think this combination of concepts is innovative and has not been sufficiently explored and taught. Data Storytelling and Python is such a powerful combination. During the talk, I will share insights and suggestions on different skills and technical tools that we can use to create more engaging, entertaining, and memorable presentations using Python libraries and programs. Let's make the world better, one presentation at a time!
-* **Fecha**: May 17th, 2024
+* **Fecha**: May 18th, 2024
 * **Lugar**: Pittsburgh, PyCon US 2024
-* **Contexto**: My first PyCon US talk?
+* **Contexto**: My first PyCon US talk!
 * **Visualización**: 
-  * [Slides (pdf)](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile/raw/main/slides-eng.pdf)
-  * [Slides (html)](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile/raw/main/slides-eng.html)
+  * [Slides (html, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.html)
+  * [Slides (pdf, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.pdf)
+  * [Quarto code (qmd)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.qmd)
 
 
 # Español
@@ -19,6 +20,7 @@ Charla que espero sea aceptada en la PyCon US 2024.
 * **Lugar**: Pittsburgh, PyCon US 2024
 * **Contexto**: Mi primera charla en la PyCon US
 * **Visualización**: 
-  * [Slides (pdf)](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile/raw/main/slides-esp.pdf)
-  * [Slides (html)](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile/raw/main/slides-esp.html)
+  * [Slides (html, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.html)
+  * [Slides (pdf, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.pdf)
+  * [Quarto code (qmd)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español.qmd)
 

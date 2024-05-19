@@ -13,7 +13,7 @@ format:
     center: true
     slide-number: true
     preview-links: false
-    output-file: "esp-slides"
+    output-file: "presentacion-español"
 ---
 
 ## .
