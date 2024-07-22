@@ -7,7 +7,7 @@
 * **Visualización**: 
   * [Slides (html, 40 Mb, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.html)
   * [Slides (pdf, 12 Mb, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.pdf)
-  * [Quarto code (qmd, 26 kb)](https://sebastiandres.github.io/talk_2024_05_pycon_us/slides-eng.qmd)
+  * [Quarto code (qmd, 26 kb)](https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/slides-eng.qmd)
 
 
 # Español
@@ -20,5 +20,5 @@
   * [Video (youtube, 30 min)](https://youtu.be/vgkOTFfJvPc?t=189)
   * [Slides (html, 45 Mb, interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español-v2.html)
   * [Slides (pdf, 7 Mb, non interactive)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español-v2.pdf)
-  * [Quarto code (qmd, 22 kb)](https://sebastiandres.github.io/talk_2024_05_pycon_us/presentacion-español-v2.qmd)
+  * [Quarto code (qmd, 22 kb)](https://github.com/sebastiandres/talk_2024_05_pycon_us/blob/main/presentacion-español-v2.qmd)
 
