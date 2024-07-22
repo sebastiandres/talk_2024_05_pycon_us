@@ -1,5 +1,5 @@
 render:
-	quarto render presentacion-español-v2.qmd
+	quarto render presentacion-español-nerdearla.qmd
 
 view:
-	open presentacion-español-v2.html
+	open presentacion-español-nerdearla.html
