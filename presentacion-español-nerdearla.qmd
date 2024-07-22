@@ -18,13 +18,15 @@ format:
     theme:
         - simple
         - style/style_background_nerdearla.scss
+filters: 
+  - pyodide
 ---
 
 ## Use the arrows to navigate the presentation.
 
 --- 
 
-## { .custom-title }
+## { .custom-slide }
 
 &#32; 
 
@@ -674,6 +676,16 @@ You can even do incremental slides or reveal by fragments.
 You have to compile/render before the presentation, so little changes of getting errors during the presentation.
 But - it cannot do realtime code execution. It's not design for.
 :::
+
+---
+
+## 
+
+```{pyodide-python}
+saludo = "Hola"
+nombre = "PyLadies"
+print(saludo + " " + nombre)
+```
 
 ---
 
