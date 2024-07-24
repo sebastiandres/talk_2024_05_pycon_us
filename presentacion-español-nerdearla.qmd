@@ -384,7 +384,7 @@ from ipyvizzu import Data, Config, Style
 from ipyvizzustory import Story, Slide, Step
 
 # Import the date
-df = pd.read_excel("./data/python_conference.xlsx", 
+df = pd.read_excel("./data/nerdearla_conference.xlsx", 
             dtype={"year": str, "location": str, "attendees": int, "type":str})
 df["year_num"] = df["year"].astype(int)
 
