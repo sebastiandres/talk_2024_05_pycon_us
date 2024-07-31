@@ -9,7 +9,7 @@ format:
     controls: true
     transition: fade
     auto-stretch: false
-    embed-resources: true
+    embed-resources: false
     toc: false
     center: true
     slide-number: false
@@ -17,7 +17,7 @@ format:
     output-file: "presentacion-español-nerdearla"
     theme:
         - simple
-        - style/style_background_nerdearla.scss
+        - style/style_background_monterrey.scss
 filters: 
   - pyodide
 ---
@@ -374,6 +374,7 @@ So, don't share numbers. Share a story.
 
 ---
 
+<!--
 ## Vizzu: Una librería para Data Storytelling
 
 ```{python}
@@ -453,6 +454,108 @@ slide = Slide(
                 "y": "attendees",
                 "stackedBy": "type",
                 "title": "Pycon Attendees per type (percentage)",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Play the created story!
+story.play()
+```
+
+:::{.notes}
+Now, let me share a JS & python library to do data storytelling.
+This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening.
+As we can see, the attendance numbers were rising until covid hit.
+But how is in-person versus onsite attendance?
+[click]
+It seems that online attendance is decreasing, so let's explore this as a percentage.
+[click]
+Well, it seems to be true. Who can blame them? It's much better to be onsite!
+:::
+-->
+
+## Vizzu: Una librería para Data Storytelling
+
+```{python}
+#| echo: false
+
+import pandas as pd
+from ipyvizzu import Data, Config, Style
+from ipyvizzustory import Story, Slide, Step
+
+# Import the date
+df = pd.read_excel("./data/nerdearla_conference.xlsx", 
+            dtype={"year": str, "location": str, "attendees": int, "type":str})
+df["year_num"] = df["year"].astype(int)
+
+# Create story object, add data to it
+data = Data()
+data.add_df(df)
+story = Story(data=data)
+
+# Set the size of the HTML element and activate tooltip
+story.set_size("100%", "600px")
+story.set_feature("tooltip", True)
+
+# Visualization 1
+slide = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "title": "Asistentes a Nerdearla ",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Visualization 2
+slide = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "stackedBy": "type",
+                "title": "Asistentes a Nerdearla",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Visualization 3
+slide = Slide(
+    Step(
+        Data.filter("record.year_num >= 2021"),
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "stackedBy": "type",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Visualization 4
+slide = Slide(
+    Step(
+        Config.percentageColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "stackedBy": "type",
+                "title": "Asistentes a Nerdearla (porcentaje)",
             }
         ),
         Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
