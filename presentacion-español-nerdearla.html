@@ -487,7 +487,7 @@
   }
 
   // Store cell data
-  globalThis.qpyodideCellDetails = [{"code":"saludo = \"Hola\"\nnombre = \"PyLadies\"\nprint(saludo + \" \" + nombre)","id":1,"options":{"output":"true","message":"true","read-only":"false","fig-width":7,"fig-height":5,"classes":"","label":"","warning":"true","comment":"","context":"interactive","fig-cap":"","out-width":"700px","dpi":72,"autorun":"","out-height":"","results":"markup"}}];
+  globalThis.qpyodideCellDetails = [{"id":1,"code":"saludo = \"Hola\"\nnombre = \"PyLadies\"\nprint(saludo + \" \" + nombre)","options":{"fig-height":5,"autorun":"","message":"true","read-only":"false","output":"true","comment":"","classes":"","label":"","fig-width":7,"out-height":"","fig-cap":"","warning":"true","dpi":72,"context":"interactive","out-width":"700px","results":"markup"}}];
 
 
   </script>
@@ -880,7 +880,8 @@
 <h2>Esos cerebros tan hackables…</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
-<p>Regla del máximo y final (Peak-End Rule) <img data-src="images/storytelling/sketplanation.png" class="quarto-figure quarto-figure-center"> Imagen por sketplanation</p>
+<p>Regla del máximo y final</p>
+<p>(Peak-End Rule) <img data-src="images/storytelling/sketplanation.png" class="quarto-figure quarto-figure-center"> Imagen por sketplanation</p>
 </div><div class="column fragment" style="width:55%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1111,19 +1112,13 @@
       }</style></aside>
 </div>
 </section>
-<section class="slide level2 center">
-
-<!--
-## Vizzu: Una librería para Data Storytelling
-
-::: {#3579a46e .cell execution_count=1}
-
-::: {.cell-output .cell-output-display}
-
-```{=html}
+<section id="vizzu-una-librería-para-data-storytelling" class="slide level2 center">
+<h2>Vizzu: Una librería para Data Storytelling</h2>
+<div id="ade993c4" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
 
 <div>
-    <vizzu-player id="f8fcbdf"   controller></vizzu-player>
+    <vizzu-player id="20ef7f1" controller=""></vizzu-player>
     <script type="module">
         import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
 
@@ -1204,7 +1199,7 @@
             }
         }
 
-        const vp = document.getElementById("f8fcbdf");
+        const vp = document.getElementById("20ef7f1");
         vp.initializing.then(chart => {
             const lib = vp.Vizzu;
 
@@ -1220,7 +1215,135 @@
                 // story.add_event()
                 
 
-                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "location", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "type", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "attendees", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'title': 'Pycon Attendees'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Pycon Attendees per type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Pycon Attendees per type (percentage)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
+                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"], "type": "dimension"}, {"name": "location", "values": ["Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)", "Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)"], "type": "dimension"}, {"name": "type", "values": ["in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online"], "type": "dimension"}, {"name": "attendees", "values": [200.0, 300.0, 400.0, 400.0, 500.0, 1000.0, 900.0, 1000.0, 1400.0, 2300.0, 2500.0, 2500.0, 3100.0, 3294.0, 3391.0, 3260.0, 3393.0, 0.0, 0.0, 1753.0, 2159.0, 2738.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2650.0, 669.0, 491.0, 395.0], "type": "measure"}, {"name": "year_num", "values": [2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0, 2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'title': 'Asistentes a Pycon'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Asistentes a Pycon'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Asistentes a Pycon (percentual)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
+                vp.slides = vizzuPlayerData;
+            });
+        });
+    </script>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Now, let me share a JS &amp; python library to do data storytelling. This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening. As we can see, the attendance numbers were rising until covid hit. But how is in-person versus onsite attendance? [click] It seems that online attendance is decreasing, so let’s explore this as a percentage. [click] Well, it seems to be true. Who can blame them? It’s much better to be onsite!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!--
+## Vizzu: Una librería para Data Storytelling
+
+::: {#29027adf .cell execution_count=2}
+
+::: {.cell-output .cell-output-display}
+
+```{=html}
+
+<div>
+    <vizzu-player id="18f77c4"   controller></vizzu-player>
+    <script type="module">
+        import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
+
+        class IpyvizzuStory {
+            static version = "0.10.0";
+            static analytics = undefined;
+
+            static changeAnalyticsTo(analytics) {
+                if (IpyvizzuStory.analytics !== analytics) {
+                    console.log("ipyvizzu-story gather usage stats:", analytics);
+                    IpyvizzuStory.analytics = analytics;
+                }
+                if (analytics) {
+                    IpyvizzuStory._addHeadScript();
+                } else {
+                    IpyvizzuStory._removeScript("ipyvizzu-story-analytics-head");
+                }
+            }
+
+            static _addHeadScript() {
+                const scriptId = "ipyvizzu-story-analytics-head";
+                if (!IpyvizzuStory._isScriptAppended(scriptId)) {
+                    const script = document.createElement("script");
+                    script.defer = true;
+                    script.src = "https://plausible.io/js/script.local.js";
+                    script.dataset.domain = "usage.ipyvizzu-story.com";
+                    script.id = scriptId;
+                    document.getElementsByTagName("head")[0].appendChild(script);
+                }
+            }
+
+            static _isScriptAppended(id) {
+                return document.querySelector(`script[id="${id}"]`) !== null;
+            }
+
+            static _removeScript(id) {
+                const script = document.getElementById(id);
+                if (script) script.remove();
+            }
+        }
+
+        if (IpyvizzuStory.version !== window.IpyvizzuStory?.version) {
+            window.IpyvizzuStory = IpyvizzuStory;
+            console.log(`ipyvizzu-story ${IpyvizzuStory.version}`);
+        }
+
+        window.IpyvizzuStory?.changeAnalyticsTo(true);
+
+        class Plugins {
+            static _resolveVizzuVersion(vp) {
+                const url = vp.vizzuUrl;
+                const versionMatch = url.match(/vizzu@([^\/]+)\//);
+                return versionMatch[1];
+            }
+
+            static _resolveUrl(plugin, tag) {
+                if (!plugin.includes('/')) {
+                    const jsdelivr = "https://cdn.jsdelivr.net/npm/@vizzu";
+                    return `${jsdelivr}/${plugin}@${tag}/dist/mjs/index.min.js`;
+                }
+                return plugin;
+            }
+
+            static register(vp, chart, plugins) {
+                const tag = `vizzu-${Plugins._resolveVizzuVersion(vp)}`;
+                const pluginsRegistered = [];
+                for (const plugin of plugins) {
+                    const pluginUrl = Plugins._resolveUrl(plugin.plugin, tag);
+                    const pluginRegistered = import(pluginUrl).then(pluginModule => {
+                        const pluginInstance = new pluginModule[plugin.name](plugin.options);
+                        chart.feature(pluginInstance, true);
+                    }).catch((error) => {
+                        console.error('Error importing plugin:', pluginUrl, error)
+                    });
+                    pluginsRegistered.push(pluginRegistered);
+                }
+                return Promise.all(pluginsRegistered);
+            }
+        }
+
+        const vp = document.getElementById("18f77c4");
+        vp.initializing.then(chart => {
+            const lib = vp.Vizzu;
+
+            // story.set_size()
+            vp.style.cssText = 'width: 100%;height: 600px;'
+
+            // story.add_plugin()
+            const plugins = [];
+            
+            Plugins.register(vp, chart, plugins).then(() => {
+                // story.set_feature()
+                chart.feature('tooltip', true);
+                // story.add_event()
+                
+
+                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "location", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "type", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "attendees", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'title': 'Asistentes a Nerdearla '}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla (porcentaje)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
                 vp.slides = vizzuPlayerData;
             });
         });
@@ -1243,131 +1366,6 @@ It seems that online attendance is decreasing, so let's explore this as a percen
 Well, it seems to be true. Who can blame them? It's much better to be onsite!
 :::
 -->
-</section>
-<section id="vizzu-una-librería-para-data-storytelling" class="slide level2 center">
-<h2>Vizzu: Una librería para Data Storytelling</h2>
-<div id="3a15a6e0" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display">
-
-<div>
-    <vizzu-player id="03aaa8a" controller=""></vizzu-player>
-    <script type="module">
-        import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
-
-        class IpyvizzuStory {
-            static version = "0.10.0";
-            static analytics = undefined;
-
-            static changeAnalyticsTo(analytics) {
-                if (IpyvizzuStory.analytics !== analytics) {
-                    console.log("ipyvizzu-story gather usage stats:", analytics);
-                    IpyvizzuStory.analytics = analytics;
-                }
-                if (analytics) {
-                    IpyvizzuStory._addHeadScript();
-                } else {
-                    IpyvizzuStory._removeScript("ipyvizzu-story-analytics-head");
-                }
-            }
-
-            static _addHeadScript() {
-                const scriptId = "ipyvizzu-story-analytics-head";
-                if (!IpyvizzuStory._isScriptAppended(scriptId)) {
-                    const script = document.createElement("script");
-                    script.defer = true;
-                    script.src = "https://plausible.io/js/script.local.js";
-                    script.dataset.domain = "usage.ipyvizzu-story.com";
-                    script.id = scriptId;
-                    document.getElementsByTagName("head")[0].appendChild(script);
-                }
-            }
-
-            static _isScriptAppended(id) {
-                return document.querySelector(`script[id="${id}"]`) !== null;
-            }
-
-            static _removeScript(id) {
-                const script = document.getElementById(id);
-                if (script) script.remove();
-            }
-        }
-
-        if (IpyvizzuStory.version !== window.IpyvizzuStory?.version) {
-            window.IpyvizzuStory = IpyvizzuStory;
-            console.log(`ipyvizzu-story ${IpyvizzuStory.version}`);
-        }
-
-        window.IpyvizzuStory?.changeAnalyticsTo(true);
-
-        class Plugins {
-            static _resolveVizzuVersion(vp) {
-                const url = vp.vizzuUrl;
-                const versionMatch = url.match(/vizzu@([^\/]+)\//);
-                return versionMatch[1];
-            }
-
-            static _resolveUrl(plugin, tag) {
-                if (!plugin.includes('/')) {
-                    const jsdelivr = "https://cdn.jsdelivr.net/npm/@vizzu";
-                    return `${jsdelivr}/${plugin}@${tag}/dist/mjs/index.min.js`;
-                }
-                return plugin;
-            }
-
-            static register(vp, chart, plugins) {
-                const tag = `vizzu-${Plugins._resolveVizzuVersion(vp)}`;
-                const pluginsRegistered = [];
-                for (const plugin of plugins) {
-                    const pluginUrl = Plugins._resolveUrl(plugin.plugin, tag);
-                    const pluginRegistered = import(pluginUrl).then(pluginModule => {
-                        const pluginInstance = new pluginModule[plugin.name](plugin.options);
-                        chart.feature(pluginInstance, true);
-                    }).catch((error) => {
-                        console.error('Error importing plugin:', pluginUrl, error)
-                    });
-                    pluginsRegistered.push(pluginRegistered);
-                }
-                return Promise.all(pluginsRegistered);
-            }
-        }
-
-        const vp = document.getElementById("03aaa8a");
-        vp.initializing.then(chart => {
-            const lib = vp.Vizzu;
-
-            // story.set_size()
-            vp.style.cssText = 'width: 100%;height: 600px;'
-
-            // story.add_plugin()
-            const plugins = [];
-            
-            Plugins.register(vp, chart, plugins).then(() => {
-                // story.set_feature()
-                chart.feature('tooltip', true);
-                // story.add_event()
-                
-
-                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "location", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "type", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "attendees", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'title': 'Asistentes a Nerdearla '}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla (porcentaje)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
-                vp.slides = vizzuPlayerData;
-            });
-        });
-    </script>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Now, let me share a JS &amp; python library to do data storytelling. This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening. As we can see, the attendance numbers were rising until covid hit. But how is in-person versus onsite attendance? [click] It seems that online attendance is decreasing, so let’s explore this as a percentage. [click] Well, it seems to be true. Who can blame them? It’s much better to be onsite!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="section-8" class="slide level2 custom-section center">
 <h2></h2>

@@ -168,7 +168,9 @@ So, what do you do when you know how something works? You hack it, of course!
 ## Esos cerebros tan hackables...
 ::: columns
 ::: {.column width="45%"}
-Regla del máximo y final (Peak-End Rule)
+Regla del máximo y final 
+
+(Peak-End Rule)
 ![](images/storytelling/sketplanation.png){fig-align="center"}
 Imagen por sketplanation
 :::
@@ -374,7 +376,7 @@ So, don't share numbers. Share a story.
 
 ---
 
-<!--
+
 ## Vizzu: Una librería para Data Storytelling
 
 ```{python}
@@ -385,7 +387,7 @@ from ipyvizzu import Data, Config, Style
 from ipyvizzustory import Story, Slide, Step
 
 # Import the date
-df = pd.read_excel("./data/nerdearla_conference.xlsx", 
+df = pd.read_excel("./data/python_conference.xlsx", 
             dtype={"year": str, "location": str, "attendees": int, "type":str})
 df["year_num"] = df["year"].astype(int)
 
@@ -405,7 +407,7 @@ slide = Slide(
             {
                 "x": "year",
                 "y": "attendees",
-                "title": "Pycon Attendees",
+                "title": "Asistentes a Pycon",
             }
         ),
         Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
@@ -421,7 +423,7 @@ slide = Slide(
                 "x": "year",
                 "y": "attendees",
                 "stackedBy": "type",
-                "title": "Pycon Attendees per type",
+                "title": "Asistentes a Pycon",
             }
         ),
         Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
@@ -453,7 +455,7 @@ slide = Slide(
                 "x": "year",
                 "y": "attendees",
                 "stackedBy": "type",
-                "title": "Pycon Attendees per type (percentage)",
+                "title": "Asistentes a Pycon (porcentual)",
             }
         ),
         Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
@@ -475,8 +477,8 @@ It seems that online attendance is decreasing, so let's explore this as a percen
 [click]
 Well, it seems to be true. Who can blame them? It's much better to be onsite!
 :::
--->
 
+<!--
 ## Vizzu: Una librería para Data Storytelling
 
 ```{python}
@@ -577,7 +579,7 @@ It seems that online attendance is decreasing, so let's explore this as a percen
 [click]
 Well, it seems to be true. Who can blame them? It's much better to be onsite!
 :::
-
+-->
 ---
 
 ## { .custom-section }
