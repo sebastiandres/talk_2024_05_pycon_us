@@ -17,7 +17,7 @@ format:
     output-file: "presentacion-español-nerdearla"
     theme:
         - simple
-        - style/style_background_monterrey.scss
+        - style/style_background_nerdearla.scss
 filters: 
   - pyodide
 ---
@@ -172,12 +172,13 @@ Regla del máximo y final
 
 (Peak-End Rule)
 ![](images/storytelling/sketplanation.png){fig-align="center"}
-Imagen por sketplanation
+[Imagen por sketplanation]{style="font-size: 0.6em; color: grey"}
 :::
 ::: {.column width="55%" .fragment}
-![](images/storytelling/got.jpg){fig-align="center"}
+[.]{style="font-size: 1.5em; color: white"}
 
-[Rating de Game of Thrones, por Kelvin Neo]{.fragment}
+![](images/storytelling/got.jpg){fig-align="center"}
+[Rating de Game of Thrones, por Kelvin Neo]{.fragment style="font-size: 0.6em; color: grey"}
 :::
 :::
 
@@ -376,109 +377,6 @@ So, don't share numbers. Share a story.
 
 ---
 
-
-## Vizzu: Una librería para Data Storytelling
-
-```{python}
-#| echo: false
-
-import pandas as pd
-from ipyvizzu import Data, Config, Style
-from ipyvizzustory import Story, Slide, Step
-
-# Import the date
-df = pd.read_excel("./data/python_conference.xlsx", 
-            dtype={"year": str, "location": str, "attendees": int, "type":str})
-df["year_num"] = df["year"].astype(int)
-
-# Create story object, add data to it
-data = Data()
-data.add_df(df)
-story = Story(data=data)
-
-# Set the size of the HTML element and activate tooltip
-story.set_size("100%", "600px")
-story.set_feature("tooltip", True)
-
-# Visualization 1
-slide = Slide(
-    Step(
-        Config.stackedColumn(
-            {
-                "x": "year",
-                "y": "attendees",
-                "title": "Asistentes a Pycon",
-            }
-        ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
-    )
-)
-story.add_slide(slide)
-
-# Visualization 2
-slide = Slide(
-    Step(
-        Config.stackedColumn(
-            {
-                "x": "year",
-                "y": "attendees",
-                "stackedBy": "type",
-                "title": "Asistentes a Pycon",
-            }
-        ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
-    )
-)
-story.add_slide(slide)
-
-# Visualization 3
-slide = Slide(
-    Step(
-        Data.filter("record.year_num >= 2021"),
-        Config.stackedColumn(
-            {
-                "x": "year",
-                "y": "attendees",
-                "stackedBy": "type",
-            }
-        ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
-    )
-)
-story.add_slide(slide)
-
-# Visualization 4
-slide = Slide(
-    Step(
-        Config.percentageColumn(
-            {
-                "x": "year",
-                "y": "attendees",
-                "stackedBy": "type",
-                "title": "Asistentes a Pycon (porcentual)",
-            }
-        ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
-    )
-)
-story.add_slide(slide)
-
-# Play the created story!
-story.play()
-```
-
-:::{.notes}
-Now, let me share a JS & python library to do data storytelling.
-This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening.
-As we can see, the attendance numbers were rising until covid hit.
-But how is in-person versus onsite attendance?
-[click]
-It seems that online attendance is decreasing, so let's explore this as a percentage.
-[click]
-Well, it seems to be true. Who can blame them? It's much better to be onsite!
-:::
-
-<!--
 ## Vizzu: Una librería para Data Storytelling
 
 ```{python}
@@ -490,8 +388,8 @@ from ipyvizzustory import Story, Slide, Step
 
 # Import the date
 df = pd.read_excel("./data/nerdearla_conference.xlsx", 
-            dtype={"year": str, "location": str, "attendees": int, "type":str})
-df["year_num"] = df["year"].astype(int)
+            dtype={"año": str, "lugar": str, "asistentes": int, "modalidad":str})
+df["year_num"] = df["año"].astype(int)
 
 # Create story object, add data to it
 data = Data()
@@ -524,7 +422,7 @@ slide = Slide(
             {
                 "x": "año",
                 "y": "asistentes",
-                "stackedBy": "type",
+                "stackedBy": "modalidad",
                 "title": "Asistentes a Nerdearla",
             }
         ),
@@ -536,18 +434,19 @@ story.add_slide(slide)
 # Visualization 3
 slide = Slide(
     Step(
-        Data.filter("record.year_num >= 2021"),
+        Data.filter("record.year_num >= 2020"),
         Config.stackedColumn(
             {
                 "x": "año",
                 "y": "asistentes",
-                "stackedBy": "type",
+                "stackedBy": "modalidad",
             }
         ),
         Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
+
 
 # Visualization 4
 slide = Slide(
@@ -556,7 +455,7 @@ slide = Slide(
             {
                 "x": "año",
                 "y": "asistentes",
-                "stackedBy": "type",
+                "stackedBy": "modalidad",
                 "title": "Asistentes a Nerdearla (porcentaje)",
             }
         ),
@@ -569,17 +468,6 @@ story.add_slide(slide)
 story.play()
 ```
 
-:::{.notes}
-Now, let me share a JS & python library to do data storytelling.
-This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening.
-As we can see, the attendance numbers were rising until covid hit.
-But how is in-person versus onsite attendance?
-[click]
-It seems that online attendance is decreasing, so let's explore this as a percentage.
-[click]
-Well, it seems to be true. Who can blame them? It's much better to be onsite!
-:::
--->
 ---
 
 ## { .custom-section }
@@ -788,8 +676,17 @@ But - it cannot do realtime code execution. It's not design for.
 
 ```{pyodide-python}
 saludo = "Hola"
-nombre = "PyLadies"
+nombre = "Nerdearla"
 print(saludo + " " + nombre)
+```
+
+---
+
+## 
+
+```{pyodide-python}
+import nerdear
+nerdear.la?
 ```
 
 ---
@@ -954,15 +851,13 @@ Opción 2: Una agenda misteriosa.
 ---
 
 ## Feedback
-```{mermaid}
-%%| echo: false
-flowchart LR
-  A{"¿Te gustó la charla?"} --> |Yes| B{"¿Responder encuesta?"}
-  A --> |No| B
-  B --> |Yes| C{"¿Mantenernos en contacto?"}
-  C --> Z["¡Gracias por venir a mi charla!"]
-  B --> |No| Z
-```
+
+Un último consejo ...
+
+[¡Pide retroalimentación de tus presentaciones!]{.fragment}
+
+[¡Aprovecha de hacer crecer tu red de contactos!]{.fragment}
+
 
 :::{.notes}
 If you like the talks - and specially if you disliked the talk - share your thoughts! 
@@ -972,69 +867,15 @@ All this material is on my github, but if you want you can share your email at t
 
 ---
 
-## 
-::: {.columns style="text-align: center"}
-::: {.column width="10%"}
-:::
-::: {.column width="40%"}
-![](images/survey/QR_code_english.png){fig-align="center"}
-https://tinyurl.com/ycxj9ep5
-:::
-::: {.column width="40%"}
-![](images/seba_avatar_gmail.png){fig-align="center"}
-[¡Gracias!]{style="text-align: center;"}
-:::
-:::
-
-::: {style="text-align: center"}
-[sebastiandres | https://sebastiandres.xyz]{style="font-size: 0.75em; color: gray"}
-:::
-
-:::{.notes}
-So here's the survey - just scan the qr code or type the link, my nickname and my website, in case you're interested.
-:::
-
----
-
-## Lecturas recomendadas
-::: columns
-::: {.column width="70%"}
-&#32;<br>
-
-**Storytelling**
+**Libros Storytelling**
 
 * Storyworthy, Matthew Dicks
 * Made to Stick, Chip Heath y Dan Heath
-:::
-::: {.column width="30%"}
-![](images/survey/QR_code_english.png){fig-align="center"}
-[https://tinyurl.com/ycxj9ep5]{style="font-size: 0.75em; text-align: center;"}
-:::
-:::
 
-:::{.notes}
-So while some of you hopefully answer the survey, let me share some books.
-My favorite book on storytelling is Storyworthy, by Matthew Dicks. It's a book packed with storytelling wisdom and some great stories. So fun to read.
-:::
-
----
-
-## Lecturas recomendadas
-::: { .columns }
-::: {.column width="70%"}
-&#32;<br>
-
-**Data Storytelling**
+**Libros Data Storytelling**
 
 * Storytelling with Data, Cole Nussbaumer Knaflic
 * Data Visualization & Storytelling, Jose Berengueres y Marybeth Sandell
-
-:::
-::: {.column width="30%"}
-![](images/survey/QR_code_english.png){fig-align="center"}
-[https://tinyurl.com/ycxj9ep5]{style="font-size: 0.75em; text-align: center;"}
-:::
-:::
 
 :::{.notes}
 My favorite book on data storytelling Storytelling with Data, by Cole Nussbaumer. It very well written, and it explains step by step why some visualizations work and others fail.

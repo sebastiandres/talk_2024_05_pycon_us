@@ -319,9 +319,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="presentacion-español-nerdearla_files/libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="presentacion-español-nerdearla_files/libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="presentacion-español-nerdearla_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
   
   <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -487,7 +484,7 @@
   }
 
   // Store cell data
-  globalThis.qpyodideCellDetails = [{"id":1,"code":"saludo = \"Hola\"\nnombre = \"PyLadies\"\nprint(saludo + \" \" + nombre)","options":{"fig-height":5,"autorun":"","message":"true","read-only":"false","output":"true","comment":"","classes":"","label":"","fig-width":7,"out-height":"","fig-cap":"","warning":"true","dpi":72,"context":"interactive","out-width":"700px","results":"markup"}}];
+  globalThis.qpyodideCellDetails = [{"code":"saludo = \"Hola\"\nnombre = \"Nerdearla\"\nprint(saludo + \" \" + nombre)","options":{"dpi":72,"warning":"true","output":"true","fig-height":5,"out-width":"700px","comment":"","read-only":"false","autorun":"","fig-width":7,"fig-cap":"","classes":"","label":"","message":"true","out-height":"","context":"interactive","results":"markup"},"id":1},{"code":"import nerdear\nnerdear.la?","options":{"dpi":72,"warning":"true","output":"true","fig-height":5,"out-width":"700px","comment":"","read-only":"false","autorun":"","fig-width":7,"fig-cap":"","classes":"","label":"","message":"true","out-height":"","context":"interactive","results":"markup"},"id":2}];
 
 
   </script>
@@ -881,14 +878,10 @@
 <div class="columns">
 <div class="column" style="width:45%;">
 <p>Regla del máximo y final</p>
-<p>(Peak-End Rule) <img data-src="images/storytelling/sketplanation.png" class="quarto-figure quarto-figure-center"> Imagen por sketplanation</p>
+<p>(Peak-End Rule) <img data-src="images/storytelling/sketplanation.png" class="quarto-figure quarto-figure-center"> <span style="font-size: 0.6em; color: grey">Imagen por sketplanation</span></p>
 </div><div class="column fragment" style="width:55%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/storytelling/got.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<p><span class="fragment">Rating de Game of Thrones, por Kelvin Neo</span></p>
+<p><span style="font-size: 1.5em; color: white">.</span></p>
+<p><img data-src="images/storytelling/got.jpg" class="quarto-figure quarto-figure-center"> <span class="fragment" style="font-size: 0.6em; color: grey">Rating de Game of Thrones, por Kelvin Neo</span></p>
 </div>
 </div>
 <aside class="notes">
@@ -1114,11 +1107,11 @@
 </section>
 <section id="vizzu-una-librería-para-data-storytelling" class="slide level2 center">
 <h2>Vizzu: Una librería para Data Storytelling</h2>
-<div id="ade993c4" class="cell" data-execution_count="1">
+<div id="1efa2780" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 
 <div>
-    <vizzu-player id="20ef7f1" controller=""></vizzu-player>
+    <vizzu-player id="33d708f" controller=""></vizzu-player>
     <script type="module">
         import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
 
@@ -1199,7 +1192,7 @@
             }
         }
 
-        const vp = document.getElementById("20ef7f1");
+        const vp = document.getElementById("33d708f");
         vp.initializing.then(chart => {
             const lib = vp.Vizzu;
 
@@ -1215,7 +1208,7 @@
                 // story.add_event()
                 
 
-                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"], "type": "dimension"}, {"name": "location", "values": ["Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)", "Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)"], "type": "dimension"}, {"name": "type", "values": ["in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online"], "type": "dimension"}, {"name": "attendees", "values": [200.0, 300.0, 400.0, 400.0, 500.0, 1000.0, 900.0, 1000.0, 1400.0, 2300.0, 2500.0, 2500.0, 3100.0, 3294.0, 3391.0, 3260.0, 3393.0, 0.0, 0.0, 1753.0, 2159.0, 2738.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2650.0, 669.0, 491.0, 395.0], "type": "measure"}, {"name": "year_num", "values": [2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0, 2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'title': 'Asistentes a Pycon'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Asistentes a Pycon'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Asistentes a Pycon (percentual)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
+                const vizzuPlayerData = {"data": {"series": [{"name": "a\u00f1o", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "lugar", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "modalidad", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "asistentes", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'title': 'Asistentes a Nerdearla '}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'modalidad', 'title': 'Asistentes a Nerdearla'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2020) }, "config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'modalidad'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'modalidad', 'title': 'Asistentes a Nerdearla (porcentaje)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
                 vp.slides = vizzuPlayerData;
             });
         });
@@ -1223,149 +1216,6 @@
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>Now, let me share a JS &amp; python library to do data storytelling. This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening. As we can see, the attendance numbers were rising until covid hit. But how is in-person versus onsite attendance? [click] It seems that online attendance is decreasing, so let’s explore this as a percentage. [click] Well, it seems to be true. Who can blame them? It’s much better to be onsite!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!--
-## Vizzu: Una librería para Data Storytelling
-
-::: {#29027adf .cell execution_count=2}
-
-::: {.cell-output .cell-output-display}
-
-```{=html}
-
-<div>
-    <vizzu-player id="18f77c4"   controller></vizzu-player>
-    <script type="module">
-        import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
-
-        class IpyvizzuStory {
-            static version = "0.10.0";
-            static analytics = undefined;
-
-            static changeAnalyticsTo(analytics) {
-                if (IpyvizzuStory.analytics !== analytics) {
-                    console.log("ipyvizzu-story gather usage stats:", analytics);
-                    IpyvizzuStory.analytics = analytics;
-                }
-                if (analytics) {
-                    IpyvizzuStory._addHeadScript();
-                } else {
-                    IpyvizzuStory._removeScript("ipyvizzu-story-analytics-head");
-                }
-            }
-
-            static _addHeadScript() {
-                const scriptId = "ipyvizzu-story-analytics-head";
-                if (!IpyvizzuStory._isScriptAppended(scriptId)) {
-                    const script = document.createElement("script");
-                    script.defer = true;
-                    script.src = "https://plausible.io/js/script.local.js";
-                    script.dataset.domain = "usage.ipyvizzu-story.com";
-                    script.id = scriptId;
-                    document.getElementsByTagName("head")[0].appendChild(script);
-                }
-            }
-
-            static _isScriptAppended(id) {
-                return document.querySelector(`script[id="${id}"]`) !== null;
-            }
-
-            static _removeScript(id) {
-                const script = document.getElementById(id);
-                if (script) script.remove();
-            }
-        }
-
-        if (IpyvizzuStory.version !== window.IpyvizzuStory?.version) {
-            window.IpyvizzuStory = IpyvizzuStory;
-            console.log(`ipyvizzu-story ${IpyvizzuStory.version}`);
-        }
-
-        window.IpyvizzuStory?.changeAnalyticsTo(true);
-
-        class Plugins {
-            static _resolveVizzuVersion(vp) {
-                const url = vp.vizzuUrl;
-                const versionMatch = url.match(/vizzu@([^\/]+)\//);
-                return versionMatch[1];
-            }
-
-            static _resolveUrl(plugin, tag) {
-                if (!plugin.includes('/')) {
-                    const jsdelivr = "https://cdn.jsdelivr.net/npm/@vizzu";
-                    return `${jsdelivr}/${plugin}@${tag}/dist/mjs/index.min.js`;
-                }
-                return plugin;
-            }
-
-            static register(vp, chart, plugins) {
-                const tag = `vizzu-${Plugins._resolveVizzuVersion(vp)}`;
-                const pluginsRegistered = [];
-                for (const plugin of plugins) {
-                    const pluginUrl = Plugins._resolveUrl(plugin.plugin, tag);
-                    const pluginRegistered = import(pluginUrl).then(pluginModule => {
-                        const pluginInstance = new pluginModule[plugin.name](plugin.options);
-                        chart.feature(pluginInstance, true);
-                    }).catch((error) => {
-                        console.error('Error importing plugin:', pluginUrl, error)
-                    });
-                    pluginsRegistered.push(pluginRegistered);
-                }
-                return Promise.all(pluginsRegistered);
-            }
-        }
-
-        const vp = document.getElementById("18f77c4");
-        vp.initializing.then(chart => {
-            const lib = vp.Vizzu;
-
-            // story.set_size()
-            vp.style.cssText = 'width: 100%;height: 600px;'
-
-            // story.add_plugin()
-            const plugins = [];
-            
-            Plugins.register(vp, chart, plugins).then(() => {
-                // story.set_feature()
-                chart.feature('tooltip', true);
-                // story.add_event()
-                
-
-                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "location", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "type", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "attendees", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'title': 'Asistentes a Nerdearla '}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'type', 'title': 'Asistentes a Nerdearla (porcentaje)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
-                vp.slides = vizzuPlayerData;
-            });
-        });
-    </script>
-</div>
-```
-
-:::
-:::
-
-
-:::{.notes}
-Now, let me share a JS & python library to do data storytelling.
-This is an example that I created yesteday, based on wikipedia and the numbers shared by Mariata on the pycon opening.
-As we can see, the attendance numbers were rising until covid hit.
-But how is in-person versus onsite attendance?
-[click]
-It seems that online attendance is decreasing, so let's explore this as a percentage.
-[click]
-Well, it seems to be true. Who can blame them? It's much better to be onsite!
-:::
--->
 </section>
 <section id="section-8" class="slide level2 custom-section center">
 <h2></h2>
@@ -1618,6 +1468,11 @@ format:
 </section>
 <section id="section-16" class="slide level2 center">
 <h2></h2>
+<div id="qpyodide-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="section-17" class="slide level2 center">
+<h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <p> <br><br></p>
@@ -1664,7 +1519,7 @@ format:
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-17" class="slide level2 center">
+<section id="section-18" class="slide level2 center">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1694,7 +1549,7 @@ format:
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-18" class="slide level2 center">
+<section id="section-19" class="slide level2 center">
 <h2></h2>
 <p><span style="font-size: 1em; color: gray">Streamlit</span></p>
 <p><img style="width:100%;" src="./images/streamlit/pyconchile2021.gif"></p>
@@ -1736,7 +1591,7 @@ format:
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-19" class="slide level2 custom-section center">
+<section id="section-20" class="slide level2 custom-section center">
 <h2></h2>
 <p><span style="font-size: 2em">Final</span></p>
 <aside class="notes">
@@ -1831,23 +1686,9 @@ format:
 </section>
 <section id="feedback" class="slide level2 center">
 <h2>Feedback</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A{"¿Te gustó la charla?"} --&gt; |Yes| B{"¿Responder encuesta?"}
-  A --&gt; |No| B
-  B --&gt; |Yes| C{"¿Mantenernos en contacto?"}
-  C --&gt; Z["¡Gracias por venir a mi charla!"]
-  B --&gt; |No| Z
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<p>Un último consejo …</p>
+<p><span class="fragment">¡Pide retroalimentación de tus presentaciones!</span></p>
+<p><span class="fragment">¡Aprovecha de hacer crecer tu red de contactos!</span></p>
 <aside class="notes">
 <p>If you like the talks - and specially if you disliked the talk - share your thoughts! I love getting feedback from my presentations, because it has helped me improve my skills and get ideas on how to improve the content and slides. All this material is on my github, but if you want you can share your email at the end of the survey and I will send you an email from my personal email with links and stuff, and we can keep in touch! If you don’t want to answer the survey that’s OK too! I just want to make things easier for you!</p>
 <style type="text/css">
@@ -1862,76 +1703,18 @@ format:
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-20" class="slide level2 center">
-<h2></h2>
-<div class="columns" style="text-align: center">
-<div class="column" style="width:10%;">
+<section class="slide level2 center">
 
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/survey/QR_code_english.png" class="quarto-figure quarto-figure-center"> https://tinyurl.com/ycxj9ep5</p>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/seba_avatar_gmail.png" class="quarto-figure quarto-figure-center"> <span style="text-align: center;">¡Gracias!</span></p>
-</div>
-</div>
-<div style="text-align: center">
-<p><span style="font-size: 0.75em; color: gray">sebastiandres | https://sebastiandres.xyz</span></p>
-</div>
-<aside class="notes">
-<p>So here’s the survey - just scan the qr code or type the link, my nickname and my website, in case you’re interested.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="lecturas-recomendadas" class="slide level2 center">
-<h2>Lecturas recomendadas</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p> <br></p>
-<p><strong>Storytelling</strong></p>
+<p><strong>Libros Storytelling</strong></p>
 <ul>
 <li>Storyworthy, Matthew Dicks</li>
 <li>Made to Stick, Chip Heath y Dan Heath</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="images/survey/QR_code_english.png" class="quarto-figure quarto-figure-center"> <span style="font-size: 0.75em; text-align: center;">https://tinyurl.com/ycxj9ep5</span></p>
-</div>
-</div>
-<aside class="notes">
-<p>So while some of you hopefully answer the survey, let me share some books. My favorite book on storytelling is Storyworthy, by Matthew Dicks. It’s a book packed with storytelling wisdom and some great stories. So fun to read.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="lecturas-recomendadas-1" class="slide level2 center">
-<h2>Lecturas recomendadas</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p> <br></p>
-<p><strong>Data Storytelling</strong></p>
+<p><strong>Libros Data Storytelling</strong></p>
 <ul>
 <li>Storytelling with Data, Cole Nussbaumer Knaflic</li>
 <li>Data Visualization &amp; Storytelling, Jose Berengueres y Marybeth Sandell</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="images/survey/QR_code_english.png" class="quarto-figure quarto-figure-center"> <span style="font-size: 0.75em; text-align: center;">https://tinyurl.com/ycxj9ep5</span></p>
-</div>
-</div>
 <aside class="notes">
 <p>My favorite book on data storytelling Storytelling with Data, by Cole Nussbaumer. It very well written, and it explains step by step why some visualizations work and others fail.</p>
 <style type="text/css">
