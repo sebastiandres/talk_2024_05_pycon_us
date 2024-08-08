@@ -36,19 +36,25 @@ filters:
 
 **Muerte por PowerPoint (sustantivo):**
 
-Una experiencia dolorosa causada por una presentación larga y aburrida con demasiadas diapositivas llenas de texto, fuentes pequeñas y listas interminables.
+[Una experiencia sumamente desagradable y tediosa que resulta de asistir a una presentación que abusa del uso de diapositivas cargadas de texto, a menudo con fuentes diminutas y listas interminables. Esta forma de presentación, carente de creatividad y dinamismo, suele fallar en capturar la atención del público y puede llevar a una desconexión total de la audiencia.]{style="font-size: .6em"}
 
-Síntomas comunes: ojos soñolientos, bostezos y un fuerte deseo de huir.
 
-Ejemplo: "Después de una hora, sentí que estaba muriendo por PowerPoint."
+[Síntomas comunes:]{style="font-size: .6em"}
 
-*(Véase también: infierno en tierra, tortura por presentación)*
 
+[La víctima de una "muerte por PowerPoint" puede presentar ojos vidriosos y soñolientos, episodios repetidos de bostezos y un deseo abrumador de escapar del entorno. Estos síntomas son indicativos de una sobrecarga de información y una falta de estímulos visuales o narrativos que mantengan el interés.]{style="font-size: .5em"}
+
+
+[Ejemplo:]{style="font-size: .5em"}
+
+
+["Después de una hora de escuchar la voz monótona del presentador mientras pasaba diapositiva tras diapositiva, sentí que estaba muriendo por PowerPoint. Era como una tortura visual."]{style="font-size: .5em"}
+
+
+[Véase también: infierno en tierra, tortura por presentación, pesadilla de PowerPoint]{style="font-size: .3em"}
 
 ::: {.notes}
 (Reading with plain monotone voice)
-Well, that slide was a perfect example of death by powerpoint.
-Too much text, monotone voice. That's exactly what you need to avoid.
 :::
 ---
 
@@ -59,30 +65,6 @@ Welcome to my talk: Avoiding deaths by powerpoint - Data Storytelling and Python
 
 Just to be fair, deaths by powerpoint are not caused by the software. It's the speaker that lacks data storytelling tools and skills to make it more engaging! 
 :::
----
-
-## About me
-::: columns
-::: {.column width="40%"}
-![](images/seba_avatar_gmail.png){fig-align="center"}
-:::
-::: {.column width="60%"}
-&#32;<br>
-
-* Sebastián Flores aka sebastiandres
-* Miembro Python Chile
-* Colaborador de Streamlit y Vizzu
-* Chief Data Officer en uPlanner
-:::
-:::
-
-::: {.notes}
-My name is Sebastian Flores, you can find me as sebastiandres on most sites - wink wink you can follow me on github, twitter and linkedin. 
-I’m part of the Python Chile team, organizing the PyCon Chile and PyDay Chile events.
-I also collaborate with the libraries Streamlit and Vizzu.
-My real job is CDO at uPlanner.
-:::
-
 ---
 
 ## Agenda { .custom-slide }
@@ -103,13 +85,8 @@ Siempre eleva la tensión y el dramatismo.
 :::
 
 ::: {.notes}
-Let's review in detail everything that I will cover on the presentation.
-
-Lesson #1 of Storytelling.
-NEVER kill the suspense. 
 Don't give up the reveal. 
 No book or joke starts by revealing the ending, why would you? 
-Only explain the content if it raises the stakes and makes it more interesting!
 :::
 
 ---
@@ -120,7 +97,7 @@ Only explain the content if it raises the stakes and makes it more interesting!
 1. Nunca reveles el [final]{style="background-color:black;"}
 2. Los detalles son importantes, pero [no **todos** los detalles son importantes.]{style="background-color:black;"}
 3. Tu primera versión será [horrible.]{style="background-color:black;"}
-4. Muestra, no [cuentes.]{style="background-color:black;"}
+4. [Muestra más]{style="background-color:black;"}, explica menos.
 :::
 
 ::: {.notes}
@@ -134,9 +111,6 @@ Opción 2: Una agenda misteriosa.
 
 [¿Por qué Data Storytelling?]{style="font-size: 1.5em"}
 
-::: {.notes}
-OK, so, why data storytelling?
-:::
 ---
 
 ## ¿Storytelling?
@@ -235,9 +209,9 @@ The key point is: Only emotions create actions.
 ::: {.column width="30%" .fragment fragment-index=1}
 ![](images/storytelling/spotify1.jpeg){fig-align="center"}
 :::
-::: {.column width="40%" .center}
-&#32;<br><br>
-¿Podemos hacer que millones de personas compartan estadísticas en redes sociales?
+::: {.column width="40%"}
+&#32;<br><br><br>
+[¿Podemos hacer que millones de personas compartan estadísticas en redes sociales?]{style="text-align:center;"}
 :::
 ::: {.column width="30%" .fragment fragment-index=1}
 ![](images/storytelling/spotify2.jpeg){fig-align="center"}
@@ -319,7 +293,7 @@ If in the first act you describe a pistol hung on the wall, then the pistol must
 
 ::: columns
 ::: {.column width="70%" .incremental}
-¡Muchas librerías excelentes!
+¡Muchas librerías excelentes en Python!
 
 * Clásicas: Matplotlib
 * Emergentes: Seaborn, Plotly, Altair
@@ -410,7 +384,7 @@ slide = Slide(
                 "title": "Asistentes a Nerdearla ",
             }
         ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -426,7 +400,7 @@ slide = Slide(
                 "title": "Asistentes a Nerdearla",
             }
         ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -442,7 +416,7 @@ slide = Slide(
                 "stackedBy": "modalidad",
             }
         ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -454,12 +428,12 @@ slide = Slide(
         Config.percentageColumn(
             {
                 "x": "año",
-                "y": "asistentes",
+                "y": "porcentaje",
                 "stackedBy": "modalidad",
                 "title": "Asistentes a Nerdearla (porcentaje)",
             }
         ),
-        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -489,7 +463,7 @@ Let's now discuss another interesting tool: Artificial Intelligence.
 ::: {.column width="70%"}
 **Regla de Storytelling #3:** 
 
-Tu primera versión siempre será horrible.
+Tu primera versión siempre será un borrador horrible.
 :::
 :::
 
@@ -511,6 +485,12 @@ I want to relate this point to Regla de Storytelling #3: Your first draft is not
 :::
 ::: {.column width="40%" .fragment}
 ![](images/ai/choice.jpeg){fig-align="center"}
+:::
+:::
+
+::: {.columns style="text-align: center" .fragment}
+::: {.column width="100%"}
+Utiliza tu tiempo inteligentemente.
 :::
 :::
 
@@ -581,7 +561,10 @@ You cannot tell someone to feel something. You have to give them the means and r
 ## Herramientas para presentación
 
 * Clásica: PowerPoint
-* Herramientas **"Show don't tell"**: quarto, jupyter + RISE, streamlit
+* Herramientas **"Show don't tell"**: 
+  * quarto
+  * jupyter + RISE
+  * html & webapps
 * Otros: canvas, revealjs, prezi
 
 :::{.notes}
@@ -714,7 +697,7 @@ You have to manually define each of your cells to be a part of a slide or to be 
 
 [Jupyter + RISE]{style="font-size: 1em; color: gray"}
 
-<img style="width:100%;" src="./images/rise/basic_usage.gif">
+<img style="width:80%;" src="./images/rise/basic_usage.gif">
 
 :::{.notes}
 You click on the "launch slideshow" button, and a dynamic presentation is created on the fly. Same as quarto, it uses the revealjs javascript library as backend, but it can execute python code (or your kernel's language) on the fly. This is very useful if you are running a tutorial or something that needs that kind of interactivity.
@@ -723,30 +706,13 @@ You click on the "launch slideshow" button, and a dynamic presentation is create
 
 ## 
 
-::: columns
-::: {.column width="60%"}
-&#32;<br><br>
+[HTML & webapps]{style="font-size: 1em; color: gray"}
 
-[Streamlit]{style="font-size: 1em; color: gray"}
+Usa la herramienta adecuada a lo que quieras enseñar.  
 
-Todo python y tan interactivo como te atrevas a programarlo...
-:::
-::: {.column width="40%"}
-![https://streamlit.io/](./images/streamlit/streamlit.png)
-:::
-:::
+Innovar es llamativo.
 
-:::{.notes}
-And finally, streamlit. Streamlit is a python library to build python webapps - very fast, very pythonistic. But probably not the library you expected to see for presentations. 
-:::
-
----
-
-## 
-
-[Streamlit]{style="font-size: 1em; color: gray"}
-
-<img style="width:100%;" src="./images/streamlit/pyconchile2021.gif">
+<img style="width:80%;" src="./images/streamlit/pyconchile2021.gif">
 
 :::{.notes}
 Sometimes it just makes sense. I did a presentation on PyCon Chile 2021 about Streamlit, and it felt natural to explain the library using the library to create the presentation. It made sense, as I could show the code and execute the code, without having to go back and forth between a presentation and a terminal. The main point is, again, Show dont tell. On presentations about code, don't tell me how to use it, show me how to use it!
@@ -786,31 +752,6 @@ So, let's wrap up.
 
 ---
 
-## Dos historias
-::: {.columns style="text-align: center"}
-::: {.column width="10%"}
-:::
-::: {.column width="40%" .fragment}
-![](images/wrapup/finding_missing_piece.jpeg){fig-align="center"}
-Data Storytelling para mí
-:::
-::: {.column width="40%" .fragment}
-![](images/wrapup/new_tool.jpeg){fig-align="center"}
-¿Data Storytelling para tí?
-:::
-:::
-
-:::{.notes}
-Let me share two stories with you. 
-[click]
-For me, storytelling has been a sort of revelation. 
-It has become a sort of "unified model" of communication that is common to science, programming, books, movies and pretty much everything.
-[click]
-I hope I have been able to share the benefits and importance of using Storytelling and Data Storytelling on your presentations. I think it can be an important tool to add to your set of tools and skills, if you invest some time on it.
-:::
-
----
-
 ## Yo creo que... { .custom-slide }
 ::: columns
 ::: {.column width="5%"}
@@ -823,46 +764,18 @@ I hope I have been able to share the benefits and importance of using Storytelli
 :::
 :::
 
-:::{.notes}
-I believe that:
-- Data Storytelling is a very VALUABLE skill
-- Using some of these tools and skills can help you CRAFT better presentations and 
-make your ideas SHINE.
-You CAN become a better presenter.
-Learn a new skill: Storytelling or Data Storytelling
-Learn a new tool: quarto, jupyter + RISE, or Vizzu. 
-So, propose a talk at any event and practice. I didn't knew quarto before this presentation!
-:::
-
 ---
 
 ## Agenda (v2) { .custom-slide }
 ::: .incremental
-1. Nunca reveles el [final]{.fragment style="color:grey;"}
-2. Los detalles son importantes, pero [no **todos** los detalles son importantes]{.fragment style="color:grey;"}
-3. Tu primera versión será [horrible]{.fragment style="color:grey;"}
-4. Muestra, no [cuentes]{.fragment style="color:grey;"}
+1. Nunca reveles el [final]{.fragment style="color:white;background-color:black;"}
+2. Los detalles son importantes, pero [no **todos** los detalles son importantes]{.fragment style="color:white;background-color:black;"}
+3. Tu primera versión será [horrible]{.fragment style="color:white;background-color:black;"}
+4. [Muestra más]{.fragment style="color:white;background-color:black;"}, explica menos.
 :::
 
 ::: {.notes}
-Opción 2: Una agenda misteriosa.
-:::
-
----
-
-## Feedback
-
-Un último consejo ...
-
-[¡Pide retroalimentación de tus presentaciones!]{.fragment}
-
-[¡Aprovecha de hacer crecer tu red de contactos!]{.fragment}
-
-
-:::{.notes}
-If you like the talks - and specially if you disliked the talk - share your thoughts! 
-I love getting feedback from my presentations, because it has helped me improve my skills and get ideas on how to improve the content and slides.
-All this material is on my github, but if you want you can share your email at the end of the survey and I will send you an email from my personal email with links and stuff, and we can keep in touch! If you don't want to answer the survey that's OK too! I just want to make things easier for you!
+La solución.
 :::
 
 ---
@@ -877,9 +790,16 @@ All this material is on my github, but if you want you can share your email at t
 * Storytelling with Data, Cole Nussbaumer Knaflic
 * Data Visualization & Storytelling, Jose Berengueres y Marybeth Sandell
 
-:::{.notes}
-My favorite book on data storytelling Storytelling with Data, by Cole Nussbaumer. It very well written, and it explains step by step why some visualizations work and others fail.
-:::
+---
+
+
+## Feedback
+
+Un último consejo ...
+
+[¡Pide retroalimentación de tus presentaciones!]{.fragment}
+
+[¡Aprovecha de hacer crecer tu red de contactos!]{.fragment}
 
 ---
 
@@ -899,8 +819,4 @@ https://tinyurl.com/ycxj9ep5
 
 ::: {style="text-align: center"}
 [sebastiandres | https://sebastiandres.xyz]{style="font-size: 0.75em; color: gray"}
-:::
-
-:::{.notes}
-Thanks for coming to my talk, hopefully we have time for some questions.
 :::
